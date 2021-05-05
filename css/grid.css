@@ -1,0 +1,129 @@
+/*used for header & footer; basically adds space inbetween 2 items*/
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*rename content container*/
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+/*rename flex container*/
+.grid-container {
+	display: flex;
+}
+
+/*use col-1of3 & make margin unique class name*/
+.grid-item {
+	width: calc(100% / 3);
+	margin-bottom: -1rem;
+}
+
+.center-items {
+	align-items: center;
+}
+
+.top-items {
+	align-items: flex-start;
+}
+
+.align-top {
+	align-self: flex-start;
+}
+
+.align-center {
+	align-self: center;
+}
+
+.align-stretch {
+	align-self: stretch;
+}
+
+.col-1of4 {
+	width: 25%;
+}
+
+.col-2of4 {
+	width: 50%;
+}
+
+.col-3of4 {
+	width: 75%;
+}
+
+.col-4of4 {
+	width: 100%;
+}
+
+.col-1of3 {
+	width: calc(100% / 3);
+}
+
+.col-2of3 {
+	width: calc(100% / 3 * 2);
+}
+
+@media screen and (max-width: 600px) {
+	.nav-container {
+		flex-wrap: wrap;
+	}
+
+	.sticky .nav-container {
+		flex-wrap: nowrap;
+	}
+
+	.header .nav-item:not(:first-child) {
+		/*margin-right: -2.75rem;*/
+	}
+	
+	.nav-item {
+		width: 100%;
+	}
+
+	.nav-item .right {
+		position: absolute;
+		right: 0;
+	}
+
+	.header.responsive .nav-item:not(:first-child) {
+		height: calc(100vh - 5.5rem);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.col-1of4 {
+		width: 100%;
+	}
+
+	.col-2of4 {
+		width: 100%;
+	}
+
+	.col-3of4 {
+		width: 100%;
+	}
+
+	.col-1of3 {
+		width: 100%;
+	}
+
+	.col-2of3 {
+		width: 100%;
+	}
+
+	.grid-container {
+		flex-wrap: wrap;
+	}
+
+	.grid-item {
+		width: 100%;
+	}
+
+	.footer .nav-container {
+		flex-direction: column-reverse;
+	}
+}
