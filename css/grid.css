@@ -2,6 +2,12 @@
 .nav-container {
 	display: flex;
 	justify-content: space-between;
+	/*align-items: baseline;*/
+}
+
+.test-container {
+	display: flex;
+	align-items: flex-start;
 }
 
 /*rename content container*/
@@ -86,6 +92,10 @@
 	.nav-item .right {
 		position: absolute;
 		right: 0;
+	}
+
+	.test-container {
+		display: initial;
 	}
 
 	.header.responsive .nav-item:not(:first-child) {
