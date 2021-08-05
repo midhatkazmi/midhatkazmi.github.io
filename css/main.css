@@ -892,4 +892,12 @@
 		/*margin: 2.5rem 1rem;*/
 		margin: 2rem 1rem;
 	}
+
+	.section {
+		margin: 0;
+	}
+
+	.title {
+		margin-bottom: 0;
+	}
 }
