@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="html" lang="en">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 
@@ -12,11 +12,15 @@
 
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 
+		<link rel="stylesheet" type="text/css" href="css/colours.css">
+
 		<link rel="stylesheet" type="text/css" href="css/grid.css">
 
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -26,805 +30,622 @@
 	</head>
 
 	<body>
-		<header id="myHeader" class="header sticky">
-			<nav class="nav">
-				<div class="nav-container">
-					<div class="nav-item">
-						<a class="link" href="index.html">
-							<div class="grid-container">
-								<div class="nav-btn">
-									<img class="img" src="img/arrow-left.svg">
-								</div>
+		<header class="header project-header transparent">
+			<div class="header-container">
+				<a class="link left-btn" href="index.html">
+					&larr; Back
+				</a>
 
-								<div class="nav-text">
-									Back
-								</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="nav-item">
-						<a class="link" href="designs.html">
-							<div class="grid-container right">
-								<div class="nav-text">
-									Next Project
-								</div>
-
-								<div class="nav-btn">
-									<img class="img" src="img/arrow-right.svg">
-								</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</nav>
-
-			<div class="scroll-bar">
-				<div id="myScrollBar" class="scroll-progress"></div>
+				<a class="link right-btn" href="accentedge.html">
+					Next Project &rarr;
+				</a>
 			</div>
 		</header>
 
-		<main class="background">
+		<main class="liftfit">
+			<div class="landing project-landing">
+				<h1 class="heading">
+					LiftFit &mdash; a progress tracking weight-training smartphone app prototype based on user research & testing.
+				</h1>
+
+				<h4 class="subtitle">
+					Academic project,  <a class="link" href="http://www.sfu.ca/outlines.html?2018/spring/iat/334/d100" target="_blank">Interface Design</a> / March 2018 (3 weeks)
+
+					<br>
+
+					In collaboration with Sabrina Lee, Justin Lau
+				</h4>
+			</div>
+
 			<div class="content">
+				<figure class="figure">
+					<img class="img" src="img/liftfit/!product.png">
+				</figure>
+
+				<div class="col-4of6 auto-margin">
+					<h2 class="subheading">
+						Background
+					</h2>
+
+					<p class="text">
+						In a group project for a university course, we were to create a smartphone application that would be developed with a persona in context of any area we chose to focus on.
+					</p>
+				</div>
+			</div>
+
+			<div class="divider-container">
+				<div class="col-4of6 auto-margin">
+					<hr class="divider">
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<h2 class="subheading">
+						Process
+					</h2>
+
+					<h3 class="title">
+						Topic
+					</h3>
+
+					<p class="text">
+						At first, our group wanted to focus on an app that would track and motivate users to be productive with their diet and exercise. After doing research, we found that both these topics were complex to handle within their own apps, so we decided to focus on exercise as we wanted to create an app for a more apparent and commonly agreed upon action that may not have many variations (unlike food).
+					</p>
+
+					<h3 class="title">
+						Persona
+					</h3>
+
+					<p class="text">
+						We generated different personas with different needs that would need to be served with the app, and eventually settled on the persona of a young person who has access to weight lifting equipment and wants to start or already goes to the gym. If they want to start going to the gym they may not have any experience and would be too conscious to ask for help. Whatever their weight goals are (to maintain, gain, or lose weight), they want to weightlift to achieve that goal, and eventually gain confidence in going to the gym (for first time goers).
+					</p>
+
+					<h3 class="title">
+						The Problem
+					</h3>
+
+					<p class="text">
+						Frustrations this persona has (for the inexperienced gym goer) is that they have no gym experience and are too self-conscious to ask for help with weightlifting. For experienced gym goers, their frustration is that there are too many apps online that either are built for one specific workout or functionally or visually unsatisfying to use, as well as not having multiple components from different apps together (e.g. having to search up images of how to do an exercise or having to write down workout notes in a separate app).
+					</p>
+
+					<h3 class="title">
+						Goals
+					</h3>
+
+					<p class="text">
+						We want users to reach their goals in a safe manner by providing them with instructions about how to do different exercises without having to ask anyone and allow users to be able to create a personalized and customizable workout experience for themselves.
+					</p>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<h2 class="subheading">
+						Features
+					</h2>
+
+					<h3 class="title">
+						Creating an Account
+					</h3>
+
+					<p class="text">
+						The app can be used with or without an account, either storing data on the cloud or locally in the phone (respectively). Data includes user information and exercise history in order to calculate how much the user would increase the difficulty of their exercises by.
+					</p>
+				</div>
+			</div>
+
+			<div class="content padding-remove-top">
+				<div class="flex-container">
+					<div class="col-2of6">
+						<p class="text">
+							User information includes:
+						</p>
+
+						<ul class="unordered-list">
+							<li class="list-item">
+								Personal details (age, sex, weight, height)
+							</li>
+
+							<li class="list-item">
+								Weight goals (losing, maintaining, or gaining weight, goal date)
+							</li>
+
+							<li class="list-item">
+								Workout goals (workouts per week, length of workouts, goal date)
+							</li>
+
+							<li class="list-item">
+								Weight check ins
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-2of6">
+						<p class="text">
+							Workout history includes:
+						</p>
+
+						<ul class="unordered-list">
+							<li class="list-item">
+								Difficulty of workouts
+							</li>
+
+							<li class="list-item">
+								Sets and repetitions (reps) failed or completed
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-2of6">
+						<p class="text">
+							Motivation statistics include:
+						</p>
+
+						<ul class="unordered-list">
+							<li class="list-item">
+								Starting date
+							</li>
+
+							<li class="list-item">
+								Workout streaks
+							</li>
+
+							<li class="list-item">
+								Total weight lost
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="content padding-remove-top">
+				<div class="col-4of6 auto-margin">
+					<h3 class="title">
+						Creating a Workout
+					</h3>
+
+					<p class="text">
+						Creating a workout requires a name and schedule (time and day(s)); optional inputs include length of workout, rest time lengths, default sets and reps to be applied to added exercises, and notification preferences. The user can save and exit this transaction or continue to add exercises.
+					</p>
+				</div>
+			</div>
+
+			<div class="figure-container">
+				<div class="col-2of6 auto-margin">
+					<figure class="figure">
+						<video class="video" muted autoplay controls loop>
+							<source src="img/liftfit/create-workout.mp4" type="video/mp4">
+						</video>
+					</figure>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<p class="text">
+						The workout can be previewed, started, or edited with the three dot menu; an upcoming workout is always highlighted to inform the user.
+					</p>
+
+					<h3 class="title">
+						Searching an Exercise
+					</h3>
+
+					<p class="text">
+						Users can search and select multiple exercises to add to workout(s).
+					</p>
+				</div>
+			</div>
+
+			<div class="figure-container">
+				<div class="col-2of6 auto-margin">
+					<figure class="figure">
+						<video class="video" muted autoplay controls loop>
+							<source src="img/liftfit/search-exercise.mp4" type="video/mp4">
+						</video>
+					</figure>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<h3 class="title">
+						Adding an Exercise to a Workout
+					</h3>
+
+					<p class="text">
+						When the user has selected the exercise(s) they want, they can select the workout they want to add it to and is given the option to create a workout if they do not have one or want to create a new one.
+					</p>
+				</div>
+			</div>
+
+			<div class="figure-container">
+				<div class="center-container">
+					<div class="col-2of6">
+						<figure class="figure">
+							<video class="video" muted autoplay controls loop>
+								<source src="img/liftfit/add-exercise-manual.mp4" type="video/mp4">
+							</video>
+						</figure>
+					</div>
+
+					<div class="col-2of6">
+						<figure class="figure">
+							<video class="video" muted autoplay controls loop>
+								<source src="img/liftfit/add-exercise-auto.mp4" type="video/mp4">
+							</video>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<p class="text">
+						When the workout is selected, the user can choose the sets and reps of each exercise. This can be bypassed by using the quick add feature which automatically applies the default sets and reps you chose when you created the workout; you are given one more chance to edit that amount for this instance. Exercise weight is either the default or most recently used value.
+					</p>
+
+					<h3 class="title">
+						Workout Mode
+					</h3>
+
+					<p class="text">
+						The user can preview a workout where they can swap the order of the workouts (or edit it) or start the workout. The blurred background assures users they have not left the page.
+					</p>
+				</div>
+			</div>
+
+			<div class="figure-container">
+				<div class="col-2of6 auto-margin">
+					<figure class="figure">
+						<video class="video" muted autoplay controls loop>
+							<source src="img/liftfit/cooldown-mode.mp4" type="video/mp4">
+						</video>
+					</figure>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<p class="text">
+						When the workout starts, the whole screen is encapsulated which affords the user no distractions and displays the most vital information during their workout. The user can change the difficulty of the exercise which is tracked in the user’s history. The user can toggle how many reps they have completed, the affordance allowing them to easily input information if they have lost fine coordination due to working out.
+					</p>
+
+					<h3 class="title">
+						Cooldown Mode
+					</h3>
+
+					<p class="text">
+						When the user is done with their set, they can continue to cooldown mode. The timer automatically starts, and dynamically changes depending on whether you were able to complete a set (if failed, it gives you more time). Overtime is indicated by a tick (and can add up) to let the user know how much they are going overtime by.
+					</p>
+
+					<p class="text">
+						Users can pause, reset, or add overtime rest. These values are determined from the default workout values, but can be edited during cooldown.
+					</p>
+				</div>
+			</div>
+
+			<div class="figure-container">
+				<div class="col-2of6 auto-margin">
+					<figure class="figure">
+						<video class="video" muted autoplay controls loop>
+							<source src="img/liftfit/cooldown-mode.mp4" type="video/mp4">
+						</video>
+					</figure>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<p class="text">
+						When cooldown is finished, the user is notified by a sound, and they are free to return to their next set or add more rest time.
+					</p>
+
+					<h3 class="title">
+						Minimizing Workout / Cooldown Mode
+					</h3>
+
+					<p class="text">
+						Users can minimize workout/cooldown mode without quitting it to navigate the rest of the app. it presents itself at the bottom of the screen with the most vital information displayed.
+					</p>
+
+					<p class="text">
+						On the homepage, the workout card that is currently running is entirely highlighted to let the user know it is running.
+					</p>
+				</div>
+			</div>
+
+			<div class="figure-container">
+				<div class="center-container">
+					<div class="col-2of6">
+						<figure class="figure">
+							<video class="video" muted autoplay controls loop>
+								<source src="img/liftfit/minimize-workout.mp4" type="video/mp4">
+							</video>
+						</figure>
+					</div>
+
+					<div class="col-2of6">
+						<figure class="figure">
+							<video class="video" muted autoplay controls loop>
+								<source src="img/liftfit/minimize-cooldown.mp4" type="video/mp4">
+							</video>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<p class="text">
+						The user can get rid of the minimized bar which pauses the workout. They can either resume or reset the workout using the workout card.
+					</p>
+
+					<h3 class="title">
+						Finding Exercise Information
+					</h3>
+
+					<p class="text">
+						Users can find out more about an exercise during workout mode or a search.
+					</p>
+
+					<p class="text">
+						Above the fold information includes media demonstrating how to do the exercise, muscles it targets (linked to exercises targeting that muscle), and equipment needed (as well as alternatives which are linked).
+					</p>
+
+					<p class="text">
+						Below the fold information includes text instructions on how to do the exercise.
+					</p>
+				</div>
+			</div>
+
+			<div class="figure-container">
+				<div class="center-container">
+					<div class="col-2of6">
+						<figure class="figure">
+							<video class="video" muted autoplay controls loop>
+								<source src="img/liftfit/exercise-info-workout.mp4" type="video/mp4">
+							</video>
+						</figure>
+					</div>
+
+					<div class="col-2of6">
+						<figure class="figure">
+							<video class="video" muted autoplay controls loop>
+								<source src="img/liftfit/exercise-info-search.mp4" type="video/mp4">
+							</video>
+						</figure>
+					</div>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<p class="text">
+						Users can scroll or click the tabs which will take them to the appropriate section.
+					</p>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<h2 class="subheading">
+						Details
+					</h2>
+
+					<h3 class="title">
+						Affordances Accessibility
+					</h3>
+
+					<p class="text">
+						Affordances (such as on workout mode) were iterated to be bigger so as to allow an exercising person to easily press inputs to account for temporary loss of coordination from an exhaustive workout.
+					</p>
+				</div>
+
+				<figure class="figure">
+					<img class="img" src="img/liftfit/!affordance.png">
+				</figure>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<h2 class="subheading">
+						Challenges
+					</h2>
+
+					<p class="text">
+						The main challenge of this project was narrowing down enough on all aspects to be able to create an app that is able to address everything. This was a simultaneous process where the topic and the persona influenced each other. Because even when separated from diet, exercise is such a complex topic due to the variety of activities, we decided to focus on weight lifting exercises, and fulfilling the needs of a persona who prefers to weightlift.
+					</p>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<h2 class="subheading">
+						Insights
+					</h2>
+
+					<p class="text">
+						I learned the vital role user research and user experience plays in the creation of user interfaces and user interactions. The creation of features was based on the persona created, and tested with similar users, shaping the final form of the app.
+					</p>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<h2 class="subheading">
+						Future Considerations
+					</h2>
+
+					<h3 class="title">
+						Onboarding
+					</h3>
+
+					<p class="text">
+						A future consideration to improve this app would be onboarding in the form of demonstrating creating a workout, adding exercises to it, and going through workout and cooldown mode so as to ease the user into exercising language and culture.
+					</p>
+
+					<h3 class="title">
+						Individual Exercise Card
+					</h3>
+
+					<p class="text">
+						Allow individual exercise cards for warm up/cooldowns before and after workout sessions. Individual exercise cards would work in the same way workout cards do and require:
+					</p>
+
+					<div class="wrap-container">
+						<div class="col-3of6">
+							<ul class="unordered-list">
+								<li class="list-item">
+									Exercise name
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-3of6">
+							<ul class="unordered-list">
+								<li class="list-item">
+									Exercise time
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-3of6">
+							<ul class="unordered-list">
+								<li class="list-item">
+									Exercise type
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-3of6">
+							<ul class="unordered-list">
+								<li class="list-item">
+									Day(s)
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-3of6">
+							<ul class="unordered-list">
+								<li class="list-item">
+									Time of day
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="figure-container">
+				<div class="col-2of6 auto-margin">
+					<figure class="figure">
+						<video class="video" muted autoplay controls loop>
+							<source src="img/liftfit/exercise-card.mp4" type="video/mp4">
+						</video>
+					</figure>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<h3 class="title">
+						Automatically Generating a Workout
+					</h3>
+
+					<p class="text">
+						A useful feature for an existing workout without manually inputting everything would be to input a list of exercises with sets, reps and weights, where the app would generate a workout by parsing the text, and allowing the user to review it before adding it as a workout.
+					</p>
+
+					<h3 class="title">
+						Notification / Smartwatch Integration
+					</h3>
+
+					<p class="text">
+						To go along with the minimization in-app, prototype a currently running workout notification that can be interacted with on the lockscreen or status bar.
+					</p>
+
+					<p class="text">
+						Smartwatch integration can be implemented with a similar minimized and interactive prototype.
+					</p>
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="col-4of6 auto-margin">
+					<h2 class="subheading">
+						References
+					</h2>
+
+					<p class="text">
+						Exercise information text used in prototype from <a class="link" href="https://exrx.net/" target="_blank">www.ExRx.net</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="divider-container">
+				<hr class="divider">
+			</div>
+
+			<div class="more-projects">
 				<h2 class="subheading">
-					LiftFit
+					More Projects
 				</h2>
 
-				<div class="role-type">
-					User Experience / User Interface
-				</div>
-
-				<div class="flex-container">
-					<div class="col-2of4">
-						<div class="flex-container">
-							<div class="col-1of3">
-								<h4 class="subtitle table-header">
-									Period:
-								</h4>
-							</div>
-
-							<div class="col-2of3">
-								<div class="table-data">
-									Spring 2018 (3 weeks)
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-2of4">
-						<div class="flex-container">
-							<div class="col-1of3">
-								<h4 class="subtitle table-header">
-									Role:
-								</h4>
-							</div>
-
-							<div class="col-2of3">
-								<div class="table-data">
-									Research &middot; Wireframing &middot; Prototyping &middot; Design
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-2of4">
-						<div class="flex-container">
-							<div class="col-1of3">
-								<h4 class="subtitle table-header">
-									Tools:
-								</h4>
-							</div>
-
-							<div class="col-2of3">
-								<div class="table-data">
-									Adobe XD
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-2of4">
-						<div class="flex-container">
-							<div class="col-1of3">
-								<h4 class="subtitle table-header">
-									Team:
-								</h4>
-							</div>
-
-							<div class="col-2of3">
-								<div class="table-data">
-									Sabrina Lee, Justin Lau
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-2of4">
-						<div class="flex-container">
-							<div class="col-1of3">
-								<h4 class="subtitle table-header">
-									Course:
-								</h4>
-							</div>
-							
-							<div class="col-2of3">
-								<div class="table-data">
-									<a class="link" href="http://www.sfu.ca/outlines.html?2018/spring/iat/334/d100" target="_blank">Interface Design</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<hr class="divider">
-
-			<div class="content">
-				<div class="flex-container">
-					<div class="col-1of4">
-						<h3 class="title">
-							Background
-						</h3>
-					</div>
-
-					<div class="col-3of4">
-						<section class="section remove-margin-top">
-							<p class="text">
-								In a group project for a university course, we were to create a smartphone application that would be developed with a persona in context of any area we chose to focus on.
-							</p>
-						</section>
-					</div>
-
-					<div class="media">
-						<figure class="figure">
-							<a class="link" href="img/liftfit/!product.png" target="_blank">
-								<img class="img add-background" src="img/liftfit/!product.png">
-							</a>
-						</figure>
-					</div>
-
-					<div class="col-1of4">
-						<h3 class="title">
-							Process
-						</h3>
-					</div>
-
-					<div class="col-3of4">
-						<section class="section remove-margin-bottom">
-							<h4 class="subtitle">
-								Topic:
-							</h4>
-
-							<p class="text">
-								At first, our group wanted to focus on an app that would track and motivate users to be productive with their diet and exercise. After doing research, we found that both these topics were complex to handle within their own apps, so we decided to focus on exercise as we wanted to create an app for a more apparent and commonly agreed upon action that may not have many variations (unlike food).
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								Persona:
-							</h4>
-
-							<p class="text">
-								We generated different personas with different needs that would need to be served with the app, and eventually settled on the persona of a young person who has access to weight lifting equipment and wants to start or already goes to the gym. If they want to start going to the gym they may not have any experience and would be too conscious to ask for help. Whatever their weight goals are (to maintain, gain, or lose weight), they want to weightlift to achieve that goal, and eventually gain confidence in going to the gym (for first time goers).
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								The Problem:
-							</h4>
-
-							<p class="text">
-								Frustrations this persona has (for the inexperienced gym goer) is that they have no gym experience and are too self-conscious to ask for help with weightlifting. For experienced gym goers, their frustration is that there are too many apps online that either are built for one specific workout or functionally or visually unsatisfying to use, as well as not having multiple components from different apps together (e.g. having to search up images of how to do an exercise or having to write down workout notes in a separate app).
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								Goals:
-							</h4>
-
-							<p class="text">
-								We want users to reach their goals in a safe manner by providing them with instructions about how to do different exercises without having to ask anyone and allow users to be able to create a personalized and customizable workout experience for themselves.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-1of4">
-						<h3 class="title">
-							Features
-						</h3>
-					</div>
-
-					<div class="col-3of4">
-						<section class="section">
-							<h4 class="subtitle">
-								Creating an Account:
-							</h4>
-
-							<p class="text">
-								The app can be used with or without an account, either storing data on the cloud or locally in the phone (respectively). Data includes user information and exercise history in order to calculate how much the user would increase the difficulty of their exercises by.
-							</p>
-
-							<p class="text">
-								User information includes:
-							</p>
-
-							<ul class="unordered-list">
-								<div class="flex-container">
-									<div class="col-2of4">
-										<li class="list-item">
-											Personal details (age, sex, weight, height)
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Weight goals (losing, maintaining, or gaining weight, goal date)
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Workout goals (workouts per week, length of workouts, goal date)
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Weight check ins
-										</li>
-									</div>
-								</div>
-							</ul>
-
-							<p class="text">
-								Workout history includes:
-							</p>
-
-							<ul class="unordered-list">
-								<div class="flex-container">
-									<div class="col-2of4">
-										<li class="list-item">
-											Difficulty of workouts
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Sets and repetitions (reps) failed or completed
-										</li>
-									</div>
-								</div>
-							</ul>
-
-							<p class="text">
-								Motivation statistics include:
-							</p>
-
-							<ul class="unordered-list">
-								<div class="flex-container">
-									<div class="col-2of4">
-										<li class="list-item">
-											Starting date
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Workout streaks
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Total weight lost
-										</li>
-									</div>
-								</div>
-							</ul>
-
-							<br>
-
-							<h4 class="subtitle">
-								Creating a Workout:
-							</h4>
-
-							<p class="text">
-								Creating a workout requires a name and schedule (time and day(s)); optional inputs include length of workout, rest time lengths, default sets and reps to be applied to added exercises, and notification preferences. The user can save and exit this transaction or continue to add exercises.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-1of4 center">
-						<div class="media">
-							<figure class="figure">
-								<video class="vid" muted autoplay controls loop>
-									<source src="img/liftfit/create-workout.mp4" type="video/mp4">
-								</video>
-							</figure>
-						</div>
-					</div>
-				</div>
-
-				<div class="flex-container">
-					<div class="col-1of4"></div>
-
-					<div class="col-3of4">
-						<section class="section">
-							<p class="text">
-								The workout can be previewed, started, or edited with the three dot menu; an upcoming workout is always highlighted to inform the user.
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								Searching an Exercise:
-							</h4>
-
-							<p class="text">
-								Users can search and select multiple exercises to add to workout(s).
-							</p>
-						</section>
-					</div>
-
-					<div class="col-1of4 center">
-						<div class="media">
-							<figure class="figure">
-								<video class="vid" muted autoplay controls loop>
-									<source src="img/liftfit/search-exercise.mp4" type="video/mp4">
-								</video>
-							</figure>
-						</div>
-					</div>
-				</div>
-
-				<div class="flex-container">
-					<div class="col-1of4"></div>
-
-					<div class="col-3of4">
-						<section class="section">
-							<h4 class="subtitle">
-								Adding an Exercise to a Workout:
-							</h4>
-
-							<p class="text">
-								When the user has selected the exercise(s) they want, they can select the workout they want to add it to and is given the option to create a workout if they do not have one or want to create a new one.
-							</p>
-						</section>
-
-						<div class="media">
-							<div class="flex-container">
-								<div class="col-1of3">
-									<figure class="figure">
-										<video class="vid" muted autoplay controls loop>
-											<source src="img/liftfit/add-exercise-manual.mp4" type="video/mp4">
-										</video>
-									</figure>
-								</div>
-
-								<div class="col-1of3">
-									<figure class="figure">
-										<video class="vid" muted autoplay controls loop>
-											<source src="img/liftfit/add-exercise-auto.mp4" type="video/mp4">
-										</video>
-									</figure>
-								</div>
-							</div>
-						</div>
-
-						<section class="section">
-							<p class="text">
-								When the workout is selected, the user can choose the sets and reps of each exercise. This can be bypassed by using the quick add feature which automatically applies the default sets and reps you chose when you created the workout; you are given one more chance to edit that amount for this instance. Exercise weight is either the default or most recently used value.
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								Workout Mode:
-							</h4>
-
-							<p class="text">
-								The user can preview a workout where they can swap the order of the workouts (or edit it) or start the workout. The blurred background assures users they have not left the page.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-1of4 center">
-						<div class="media">
-							<figure class="figure">
-								<video class="vid" muted autoplay controls loop>
-									<source src="img/liftfit/cooldown-mode.mp4" type="video/mp4">
-								</video>
-							</figure>
-						</div>
-					</div>
-				</div>
-
-				<div class="flex-container">
-					<div class="col-1of4"></div>
-
-					<div class="col-3of4">
-						<section class="section">
-							<p class="text">
-								When the workout starts, the whole screen is encapsulated which affords the user no distractions and displays the most vital information during their workout. The user can change the difficulty of the exercise which is tracked in the user’s history. The user can toggle how many reps they have completed, the affordance allowing them to easily input information if they have lost fine coordination due to working out.
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								Cooldown Mode:
-							</h4>
-
-							<p class="text">
-								When the user is done with their set, they can continue to cooldown mode. The timer automatically starts, and dynamically changes depending on whether you were able to complete a set (if failed, it gives you more time). Overtime is indicated by a tick (and can add up) to let the user know how much they are going overtime by.
-							</p>
-
-							<p class="text">
-								Users can pause, reset, or add overtime rest. These values are determined from the default workout values, but can be edited during cooldown.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-1of4 center">
-						<div class="media">
-							<figure class="figure">
-								<video class="vid" muted autoplay controls loop>
-									<source src="img/liftfit/cooldown-mode.mp4" type="video/mp4">
-								</video>
-							</figure>
-						</div>
-					</div>
-				</div>
-
-				<div class="flex-container">
-					<div class="col-1of4"></div>
-
-					<div class="col-3of4">
-						<section class="section">
-							<p class="text">
-								When cooldown is finished, the user is notified by a sound, and they are free to return to their next set or add more rest time.
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								Minimizing Workout / Cooldown Mode:
-							</h4>
-
-							<p class="text">
-								Users can minimize workout/cooldown mode without quitting it to navigate the rest of the app. it presents itself at the bottom of the screen with the most vital information displayed.
-							</p>
-
-							<p class="text">
-								On the homepage, the workout card that is currently running is entirely highlighted to let the user know it is running.
-							</p>
-						</section>
-
-						<div class="media">
-							<div class="flex-container">
-								<div class="col-1of3">
-									<figure class="figure">
-										<video class="vid" muted autoplay controls loop>
-											<source src="img/liftfit/minimize-workout.mp4" type="video/mp4">
-										</video>
-									</figure>
-								</div>
-
-								<div class="col-1of3">
-									<figure class="figure">
-										<video class="vid" muted autoplay controls loop>
-											<source src="img/liftfit/minimize-cooldown.mp4" type="video/mp4">
-										</video>
-									</figure>
-								</div>
-							</div>
-						</div>
-
-						<section class="section">
-							<p class="text">
-								The user can get rid of the minimized bar which pauses the workout. They can either resume or reset the workout using the workout card.
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								Finding Exercise Information:
-							</h4>
-
-							<p class="text">
-								Users can find out more about an exercise during workout mode or a search.
-							</p>
-
-							<p class="text">
-								Above the fold information includes media demonstrating how to do the exercise, muscles it targets (linked to exercises targeting that muscle), and equipment needed (as well as alternatives which are linked).
-							</p>
-
-							<p class="text">
-								Below the fold information includes text instructions on how to do the exercise.
-							</p>
-						</section>
-
-						<div class="media">
-							<div class="flex-container">
-								<div class="col-1of3">
-									<figure class="figure">
-										<video class="vid" muted autoplay controls loop>
-											<source src="img/liftfit/exercise-info-workout.mp4" type="video/mp4">
-										</video>
-									</figure>
-								</div>
-
-								<div class="col-1of3">
-									<figure class="figure">
-										<video class="vid" muted autoplay controls loop>
-											<source src="img/liftfit/exercise-info-search.mp4" type="video/mp4">
-										</video>
-									</figure>
-								</div>
-							</div>
-						</div>
-
-						<section class="section remove-margin-bottom">
-							<p class="text">
-								Users can scroll or click the tabs which will take them to the appropriate section.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-1of4">
-						<h3 class="title">
-							Details
-						</h3>
-					</div>
-
-					<div class="col-3of4">
-						<section class="section">
-							<h4 class="subtitle">
-								Affordances Accessibility:
-							</h4>
-
-							<p class="text">
-								Affordances (such as on workout mode) were iterated to be bigger so as to allow an exercising person to easily press inputs to account for temporary loss of coordination from an exhaustive workout.
-							</p>
-						</section>
-					</div>
-
-					<div class="media">
-						<figure class="figure">
-							<a class="link" href="img/liftfit/!affordance.png" target="_blank">
-								<img class="img add-background" src="img/liftfit/!affordance.png">
-							</a>
-						</figure>
-					</div>
-
-					<div class="col-1of4">
-						<h3 class="title">
-							Challenges
-						</h3>
-					</div>
-
-					<div class="col-3of4">
-						<section class="section remove-margin-bottom">
-							<p class="text">
-								The main challenge of this project was narrowing down enough on all aspects to be able to create an app that is able to address everything. This was a simultaneous process where the topic and the persona influenced each other. Because even when separated from diet, exercise is such a complex topic due to the variety of activities, we decided to focus on weight lifting exercises, and fulfilling the needs of a persona who prefers to weightlift.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-1of4">
-						<h3 class="title">
-							Insights
-						</h3>
-					</div>
-
-					<div class="col-3of4">
-						<section class="section remove-margin-bottom">
-							<p class="text">
-								I learned the vital role user research and user experience plays in the creation of user interfaces and user interactions. The creation of features was based on the persona created, and tested with similar users, shaping the final form of the app.
-							</p>
-						</section>
-					</div>
-					
-					<div class="col-1of4">
-						<h3 class="title">
-							Future Considerations
-						</h3>
-					</div>
-
-					<div class="col-3of4">
-						<section class="section">
-							<h4 class="subtitle">
-								Onboarding:
-							</h4>
-
-							<p class="text">
-								A future consideration to improve this app would be onboarding in the form of demonstrating creating a workout, adding exercises to it, and going through workout and cooldown mode so as to ease the user into exercising language and culture.
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								Individual Exercise Card:
-							</h4>
-
-							<p class="text">
-								Allow individual exercise cards for warm up/cooldowns before and after workout sessions. Individual exercise cards would work in the same way workout cards do and require:
-							</p>
-
-							<ul class="unordered-list">
-								<div class="flex-container">
-									<div class="col-2of4">
-										<li class="list-item">
-											Exercise name
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Exercise time
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Exercise type
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Day(s)
-										</li>
-									</div>
-
-									<div class="col-2of4">
-										<li class="list-item">
-											Time of day
-										</li>
-									</div>
-								</div>
-							</ul>
-						</section>
-					</div>
-
-					<div class="col-1of4 center">
-						<div class="media">
-							<figure class="figure">
-								<video class="vid" muted autoplay controls loop>
-									<source src="img/liftfit/exercise-card.mp4" type="video/mp4">
-								</video>
-							</figure>
-						</div>
-					</div>
-				</div>
-
-				<div class="flex-container">
-					<div class="col-1of4"></div>
-
-					<div class="col-3of4">
-						<section class="section remove-margin-bottom">
-							<h4 class="subtitle">
-								Automatically Generating a Workout:
-							</h4>
-
-							<p class="text">
-								A useful feature for an existing workout without manually inputting everything would be to input a list of exercises with sets, reps and weights, where the app would generate a workout by parsing the text, and allowing the user to review it before adding it as a workout.
-							</p>
-
-							<br>
-
-							<h4 class="subtitle">
-								Notification / Smartwatch Integration:
-							</h4>
-
-							<p class="text">
-								To go along with the minimization in-app, prototype a currently running workout notification that can be interacted with on the lockscreen or status bar.
-							</p>
-
-							<p class="text">
-								Smartwatch integration can be implemented with a similar minimized and interactive prototype.
-							</p>
-						</section>
-					</div>
-
-					<div class="col-1of4">
-						<h5 class="subheader">
-							References
-						</h5>
-					</div>
-
-					<div class="col-3of4">
-						<section class="section remove-margin-bottom">
-							<p class="text">
-								Exercise information text used in prototype from <a class="link" href="https://exrx.net/" target="_blank">www.ExRx.net</a>
-							</p>
-						</section>
-					</div>
-				</div>
-			</div>
-
-			<hr class="divider">
-
-			<div class="content">
-				<div class="flex-container">
-					<div class="col-1of4">
-						<h5 class="subheader">
-							More Projects
-						</h5>
-					</div>
-
-					<div class="col-3of4">
-						<div class="project-nav">
-							<a class="link" href="gps.html">
-								<h2 class="subheading">
-									Graduate & Postdoctoral Studies Department
-								</h2>
-
-								<div class="role-type">
-									Co-op &times; Graphic Design
-								</div>
-							</a>
-
-							<a class="link" href="designs.html">
-								<h2 class="subheading">
-									Designs & Illustrations
-								</h2>
-
-								<div class="role-type">
-								</div>
-							</a>
-
-							<a class="link" href="index.html#projects">
-								<h2 class="subheading">
-									View all projects &rarr;
-								</h2>
-							</a>
-						</div>
-					</div>
-				</div>
+				<a class="link" href="isa.html">
+					<h1 class="heading">
+						EDI in Hiring Training Module &rarr;
+					</h1>
+
+					<h4 class="subtitle">
+						An interactive training course that teaches fair & equitable practices in hiring Canada Research Chairs.
+					</h4>
+				</a>
+
+				<a class="link" href="accentedge.html">
+					<h1 class="heading">
+						Accentedge &rarr;
+					</h1>
+
+					<h4 class="subtitle">
+						Branding guidelines for a startup.
+					</h4>
+				</a>
+
+				<a class="link view-all-projects-btn" href="index.html#work">
+					<h1 class="heading">
+						View all projects &rarr;
+					</h1>
+				</a>
 			</div>
 		</main>
 
 		<footer class="footer">
-			<div class="nav-container">
-				<div class="nav-item">
-					<p class="text">
-						&copy; Midhat Kazmi / Updated October 2021
-					</p>
+			<nav class="nav">
+				<a class="link" href="mailto:midhatk@sfu.ca">
+					midhatk@sfu.ca
+				</a>
 
-					<p class="text">
-						Designed + coded with the help of chai. <span class="opacity">&#9749;</span>
-					</p>
-				</div>
+				<a class="link" href="files/midhat_kazmi_resume.pdf">
+					Resume
+				</a>
 
-				<div class="nav-item">
-					<nav class="nav">
-						<ul class="unordered-list">
-							<li class="list-item">
-								<a class="link" href="mailto:midhatk@sfu.ca">midhatk@sfu.ca</a>
-							</li>
+				<a class="link" href="https://www.linkedin.com/in/midhatkazmi/">
+					LinkedIn
+				</a>
+			</nav>
 
-							<li class="list-item">
-								<a class="link" href="https://www.linkedin.com/in/midhatkazmi" target="_blank">LinkedIn</a>
-							</li>
-
-							<li class="list-item">
-								<a class="link" href="files/midhat-kazmi-visual-designer-resume.pdf" target="_blank">Resume</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+			<h4 class="subtitle">
+				&copy; Midhat Kazmi, updated <span class="date">January 2022</span> &mdash; designed & coded with the help of chai. &#9749;
+			</h4>
 		</footer>
 
-		<a class="link" href="#">
-			<div class="scroll-up-btn">
-				<img class="img" src="img/arrow-up.svg">
-			</div>
-		</a>
+		<div class="return-to-top-btn hide">
+			<a class="link" href="#">
+				Return to top &uarr;
+			</a>
+		</div>
 
-		<script type="text/javascript" src="js/javascript.js"></script>
+		<script type="text/javascript" src="js/code.js"></script>
 	</body>
 </html>

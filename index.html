@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html class="html" lang="en">
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 
@@ -14,256 +14,236 @@
 
 		<link rel="stylesheet" type="text/css" href="css/grid.css">
 
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 		<title>
-			Midhat Kazmi &times; Portfolio
+			Midhat Kazmi
 		</title>
 	</head>
 
 	<body>
-		<header id="myHeader" class="header">
-			<nav class="nav">
-				<div class="nav-container">
-					<div class="nav-item">
-						<h1 class="heading">
-							<span class="name">
-								<a class="link" href="index.html">Midhat Kazmi</a>
-							</span>
+		<header class="header home-header hide">
+			<div class="header-container">
+				<a class="link left-btn remove" href="index.html">
+					Midhat Kazmi
+				</a>
 
-							<span class="display">
-								&times;
+				<div>
+					<a class="link right-btn display" href="index.html#work">
+						Work
+					</a>
 
-								<a class="link" href="index.html">Visual Designer</a>
-							</span>
-						</h1>
-					</div>
+					<a class="link right-btn" href="about.html">
+						About
+					</a>
 
-					<div class="nav-item">
-						<ul class="unordered-list">
-							<div class="test-container">
-								<li class="list-item menu-btn">
-									<a class="link" href="javascript:void(0);" onclick="menuFunction()">
-										<img class="img remove" src="img/menu.svg">
-									</a>
-								</li>
-
-								<li class="list-item">
-									<a class="link remove" href="index.html">Home</a>
-								</li>
-
-								<li class="list-item">
-									<a class="link" href="about.html">About</a>
-								</li>
-
-								<li class="list-item">
-									<a class="link" href="contact.html">Contact</a>
-								</li>
-
-								<li class="list-item">
-									<a class="link" href="files/midhat-kazmi-visual-designer-resume.pdf" target="_blank">Resume</a>
-								</li>
-							</div>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-
-		<main class="background">
-			<div class="content add-padding-top landing">
-				<div class="col-2of4 center">
-					<h2 class="subheading">
-						I'm a visual designer specializing in <em class="emphasis">branding & identity</em>.
-					</h2>
-
-					<p class="text">
-						Get to know more <a class="link" href="about.html">about that</a>, or check out my <a class="link" href="#projects">work</a> below.
-					</p>
+					<a class="link right-btn" href="about.html#contact">
+						Contact
+					</a>
 				</div>
 			</div>
+		</header>
 
-			<div id="projects" class="content">
-				<div class="grid-container">
-					<div class="grid-item">
-						<a class="link">
-							<div class="project">
-								<figure class="figure">
-									<img class="img" src="img/module/preview.jpg">
-									
-									<figcaption class="caption">
-										<div class="name-type">
-											<div class="name">
-												CRC Training Module
-											</div>
+		<main>
+			<div class="landing home">
+				<h1 class="heading">
+					I'm Midhat Kazmi &mdash; a visual designer specializing in <em class="emphasis">branding & identity</em>.
+				</h1>
 
-											<div class="type">
-												User Experience / User Interface
-											</div>
-										</div>
+				<h4 class="subtitle">
+					Learn more <a class="link" href="about.html">about me</a>, or check out my <a class="link" href="#work">work</a> below. &darr;
+				</h4>
+			</div>
 
-										<div class="role">
-											Coming Soon
-										</div>
-									</figcaption>
-								</figure>
-							</div>
-						</a>
+			<div class="divider-container">
+				<hr class="divider">
+			</div>
+		
+			<div id="work" class="project padding-increase-top sfu">
+				<a class="link" href="isa.html">
+					<div class="project-container">
+						<div class="col-3of6">
+							<figure class="figure">
+								<img class="img" src="img/isa/preview.jpg">
+							</figure>
+						</div>
 
-						<a class="link" href="baabulilm.html">
-							<div class="project">
-								<figure class="figure">
-									<img class="img" src="img/baabulilm/preview.jpg">
-									
-									<figcaption class="caption">
-										<div class="name-type">
-											<div class="name">
-												Baabul Ilm Education Society
-											</div>
+						<div class="col-3of6">
+							<h4 class="subtitle">
+								Internship @ Institutional Strategic Awards / 2021
+							</h4>
 
-											<div class="type">
-												Logo Design
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</div>
-						</a>
+							<h3 class="title">
+								An interactive training course that teaches fair & equitable practices in hiring Canada Research Chairs.
+							</h3>
+
+							<h4 class="subtitle view-btn">
+								View project &rarr;
+							</h4>
+						</div>
 					</div>
+				</a>
+			</div>
 
-					<div class="grid-item">
-						<a class="link" href="accentedge.html">
-							<div class="project">
-								<figure class="figure">
-									<img class="img" src="img/accentedge/preview.jpg">
-									
-									<figcaption class="caption">
-										<div class="name-type">
-											<div class="name">
-												Accentedge
-											</div>
+			<div class="project liftfit">
+				<a class="link" href="liftfit.html">
+					<div class="project-container">
+						<div class="col-3of6">
+							<figure class="figure">
+								<img class="img" src="img/liftfit/mockup.png">
+							</figure>
+						</div>
 
-											<div class="type">
-												Branding / Identity
-											</div>
-										</div>
+						<div class="col-3of6">
+							<h4 class="subtitle">
+								Academic project, Interface Design course / 2018
+							</h4>
 
-										<div class="role">
-											Internship
-										</div>
-									</figcaption>
-								</figure>
-							</div>
-						</a>
+							<h3 class="title">
+								A progress tracking weight-training smartphone app prototype based on user research & testing.
+							</h3>
 
-						<a class="link" href="gps.html">
-							<div class="project">
-								<figure class="figure">
-									<img class="img" src="img/gps/preview.jpg">
-									
-									<figcaption class="caption">
-										<div class="name-type">
-											<div class="name">
-												Graduate & Postdoctoral Studies Department
-											</div>
-
-											<div class="type">
-												Graphic Design
-											</div>
-										</div>
-
-										<div class="role">
-											Co-op
-										</div>
-									</figcaption>
-								</figure>
-							</div>
-						</a>
+							<h4 class="subtitle view-btn">
+								View project &rarr;
+							</h4>
+						</div>
 					</div>
+				</a>
+			</div>
 
-					<div class="grid-item">
-						<a class="link" href="liftfit.html">
-							<div class="project">
-								<figure class="figure">
-									<img class="img" src="img/liftfit/preview.jpg">
-									
-									<figcaption class="caption">
-										<div class="name-type">
-											<div class="name">
-												LiftFit
-											</div>
+			<div class="project accentedge">
+				<a class="link" href="accentedge.html">
+					<div class="project-container">
+						<div class="col-3of6">
+							<figure class="figure">
+								<img class="img" src="img/accentedge/guidelines.png">
+							</figure>
+						</div>
 
-											<div class="type">
-												User Experience / User Interface
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</div>
-						</a>
+						<div class="col-3of6">
+							<h4 class="subtitle">
+								Internship @ Accentedge / 2018
+							</h4>
 
-						<a class="link" href="designs.html">
-							<div class="project">
-								<figure class="figure">
-									<img class="img" src="img/designs/preview.gif">
-									
-									<figcaption class="caption">
-										<div class="name-type">
-											<div class="type">
-												Designs & Illustrations
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</div>
-						</a>
+							<h3 class="title">
+								Branding guidelines for a startup.
+							</h3>
+
+							<h4 class="subtitle view-btn">
+								View project &rarr;
+							</h4>
+						</div>
 					</div>
-				</div>
+				</a>
+			</div>
+
+			<div class="project sfu">
+				<a class="link" href="gps.html">
+					<div class="project-container">
+						<div class="col-3of6">
+							<figure class="figure">
+								<img class="img" src="img/gps/materials.png">
+							</figure>
+						</div>
+
+						<div class="col-3of6">
+							<h4 class="subtitle">
+								Internship @ Graduate & Postdoctoral Studies / 2018
+							</h4>
+
+							<h3 class="title">
+								Graphics for a graduate student university department.
+							</h3>
+
+							<h4 class="subtitle view-btn">
+								View project &rarr;
+							</h4>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="project baabulilm">
+				<a class="link" href="baabulilm.html">
+					<div class="project-container">
+						<div class="col-3of6">
+							<figure class="figure">
+								<img class="img" src="img/baabulilm/logo.png">
+							</figure>
+						</div>
+
+						<div class="col-3of6">
+							<h4 class="subtitle">
+								Client project, Baabul Ilm Education Society / 2018
+							</h4>
+
+							<h3 class="title">
+								Logo for a religious scholarship organization.
+							</h3>
+
+							<h4 class="subtitle view-btn">
+								View project &rarr;
+							</h4>
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<div class="project">
+				<a class="link" href="designs.html">
+					<div class="project-container">
+						<div class="col-3of6">
+							<figure class="figure">
+								<img class="img" src="img/designs/designs.gif">
+							</figure>
+						</div>
+
+						<div class="col-3of6">
+							<h3 class="title">
+								Logos & posters from client, academic & personal work over various points in time.
+							</h3>
+
+							<h4 class="subtitle view-btn">
+								View project &rarr;
+							</h4>
+						</div>
+					</div>
+				</a>
 			</div>
 		</main>
 
 		<footer class="footer">
-			<div class="nav-container">
-				<div class="nav-item">
-					<p class="text">
-						&copy; Midhat Kazmi / Updated October 2021
-					</p>
+			<nav class="nav">
+				<a class="link" href="mailto:midhatk@sfu.ca">
+					midhatk@sfu.ca
+				</a>
 
-					<p class="text">
-						Designed + coded with the help of chai. <span class="opacity">&#9749;</span>
-					</p>
-				</div>
+				<a class="link" href="files/midhat_kazmi_resume.pdf">
+					Resume
+				</a>
 
-				<div class="nav-item">
-					<nav class="nav">
-						<ul class="unordered-list">
-							<li class="list-item">
-								<a class="link" href="mailto:midhatk@sfu.ca">midhatk@sfu.ca</a>
-							</li>
+				<a class="link" href="https://www.linkedin.com/in/midhatkazmi/">
+					LinkedIn
+				</a>
+			</nav>
 
-							<li class="list-item">
-								<a class="link" href="https://www.linkedin.com/in/midhatkazmi" target="_blank">LinkedIn</a>
-							</li>
-
-							<li class="list-item">
-								<a class="link" href="files/midhat-kazmi-visual-designer-resume.pdf" target="_blank">Resume</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
+			<h4 class="subtitle">
+				&copy; Midhat Kazmi, updated <span class="date">January 2022</span> &mdash; designed & coded with the help of chai. &#9749;
+			</h4>
 		</footer>
 
-		<a class="link" href="#">
-			<div class="scroll-up-btn">
-				<img class="img" src="img/arrow-up.svg">
-			</div>
-		</a>
+		<div class="return-to-top-btn hide">
+			<a class="link" href="#">
+				Return to top &uarr;
+			</a>
+		</div>
 
-		<script type="text/javascript" src="js/javascript.js"></script>
+		<script type="text/javascript" src="js/code.js"></script>
 	</body>
 </html>

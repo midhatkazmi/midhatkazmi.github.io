@@ -1,139 +1,85 @@
-/*used for header & footer; basically adds space inbetween 2 items*/
-.nav-container {
+.header-container {
 	display: flex;
 	justify-content: space-between;
-	/*align-items: baseline;*/
 }
 
-.test-container {
-	display: flex;
-	align-items: flex-start;
-}
-
-/*rename content container*/
 .flex-container {
 	display: flex;
-	flex-wrap: wrap;
-	align-items: baseline;
 }
 
-/*rename flex container*/
-.grid-container {
+.project-container {
 	display: flex;
-}
-
-/*use col-1of3 & make margin unique class name*/
-.grid-item {
-	width: calc(100% / 3);
-	margin-bottom: -1rem;
-}
-
-.center-items {
 	align-items: center;
 }
 
-.top-items {
-	align-items: flex-start;
+.center-container {
+	display: flex;
+	justify-content: center;
 }
 
-.align-top {
-	align-self: flex-start;
+.wrap-container {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.align-center {
-	align-self: center;
+.col-1of6 {
+	width: calc(100% / 6);
 }
 
-.align-stretch {
-	align-self: stretch;
-}
-
-.col-1of4 {
-	width: 25%;
-}
-
-.col-2of4 {
-	width: 50%;
-}
-
-.col-3of4 {
-	width: 75%;
-}
-
-.col-4of4 {
-	width: 100%;
-}
-
-.col-1of3 {
+.col-2of6 {
 	width: calc(100% / 3);
 }
 
-.col-2of3 {
+.col-3of6 {
+	width: 50%;
+}
+
+.col-4of6 {
 	width: calc(100% / 3 * 2);
 }
 
+.col-5of6 {
+	width: calc(100% / 6 * 5);
+}
+
+.auto-margin {
+	margin: auto;
+}
+
 @media screen and (max-width: 600px) {
-	.nav-container {
-		flex-wrap: wrap;
-	}
-
-	.sticky .nav-container {
-		flex-wrap: nowrap;
-	}
-
-	.header .nav-item:not(:first-child) {
-		/*margin-right: -2.75rem;*/
-	}
-	
-	.nav-item {
-		width: 100%;
-	}
-
-	.nav-item .right {
-		position: absolute;
-		right: 0;
-	}
-
-	.test-container {
-		display: initial;
-	}
-
-	.header.responsive .nav-item:not(:first-child) {
-		height: calc(100vh - 5.5rem);
-		display: flex;
+	.home-header .header-container {
 		justify-content: center;
-		align-items: center;
 	}
 
-	.col-1of4 {
-		width: 100%;
-	}
-
-	.col-2of4 {
-		width: 100%;
-	}
-
-	.col-3of4 {
-		width: 100%;
-	}
-
-	.col-1of3 {
-		width: 100%;
-	}
-
-	.col-2of3 {
-		width: 100%;
-	}
-
-	.grid-container {
+	.flex-container {
 		flex-wrap: wrap;
 	}
 
-	.grid-item {
-		width: 100%;
+	.project-container {
+		flex-wrap: wrap;
 	}
 
-	.footer .nav-container {
-		flex-direction: column-reverse;
+	.center-container {
+		flex-wrap: wrap;
+	}
+
+	.col-1of6 {
+		width: 100%
+	}
+
+	.col-2of6 {
+		width: 100%
+	}
+
+	.col-3of6 {
+		width: 100%
+	}
+
+	.col-4of6 {
+		width: 100%
+	}
+
+	.col-5of6 {
+		width: 100%
 	}
 }
