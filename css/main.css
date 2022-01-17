@@ -95,6 +95,12 @@
 	font-style: normal;
 }
 
+/* Terminology */
+
+.term {
+	font-style: italic;
+}
+
 /* Center-align text */
 
 .center-text {
@@ -165,6 +171,10 @@
 	font-weight: 500;
 	text-align: center;
 	line-height: 1.25em;
+}
+
+.caption .term {
+	color: var(--grey);
 }
 
 /* Header */
@@ -514,6 +524,10 @@
 
 .margin-add-btm {
 	margin-bottom: 2rem;
+}
+
+.margin-increase-vertical {
+	margin: 4rem 0;
 }
 
 .padding-add-top {
