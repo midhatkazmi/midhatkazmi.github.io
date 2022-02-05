@@ -8,7 +8,9 @@ $(window).on("scroll", function() {
 
 		$(".header").removeClass("transparent");
 
-		$(".return-to-top-btn").removeClass("hide");
+		// $(".return-to-top-btn").removeClass("hide");
+		
+		$(".return").removeClass("hide");
 	} else {
 		$(".header").removeClass("home-header-spacing");
 
@@ -18,6 +20,18 @@ $(window).on("scroll", function() {
 
 		$(".header.project-header").addClass("transparent");
 
-		$(".return-to-top-btn").addClass("hide");
+		// $(".return-to-top-btn").addClass("hide");
+
+		$(".return").addClass("hide");
 	}
 });
+
+function menuFunction() {
+	var x = document.getElementById("myMenu");
+
+	if (x.className === "menu") {
+		x.className += " show";
+	} else {
+		x.className = "menu";
+	}
+}

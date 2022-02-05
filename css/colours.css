@@ -34,11 +34,23 @@
 }
 
 .sfu .emphasis {
-	background-color: var(--sfu-lite);
+	/*background-color: var(--sfu-lite);*/
+	background: linear-gradient(0deg, rgba(250,229,234,1) 50%, rgba(250,229,234,0) 50%);
 	color: var(--sfu);
 }
 
 .sfu .center-text .subheading {
+	color: var(--sfu);
+}
+
+.sfu .button {
+	background-color: var(--sfu);
+	color: white;
+	border-color: var(--sfu);
+}
+
+.sfu .button:hover {
+	background-color: white;
 	color: var(--sfu);
 }
 
@@ -65,7 +77,8 @@
 }
 
 .liftfit .emphasis {
-	background-color: var(--liftfit-lite);
+	/*background-color: var(--liftfit-lite);*/
+	background: linear-gradient(0deg, rgba(234,237,241,1) 50%, rgba(234,237,241,0) 50%);
 	color: var(--liftfit);
 }
 
@@ -96,7 +109,8 @@
 }
 
 .accentedge .emphasis {
-	background-color: var(--accentedge-lite);
+	/*background-color: var(--accentedge-lite);*/
+	background: linear-gradient(0deg, rgba(233,222,248,1) 50%, rgba(233,222,248,0) 50%);
 	color: var(--accentedge);
 }
 
@@ -127,7 +141,8 @@
 }
 
 .baabulilm .emphasis {
-	background-color: var(--baabulilm-lite);
+	/*background-color: var(--baabulilm-lite);*/
+	background: linear-gradient(0deg, rgba(255,247,235,1) 50%, rgba(255,247,235,0) 50%);
 	color: var(--baabulilm);
 }
 
