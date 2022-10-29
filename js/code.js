@@ -1,37 +1,17 @@
 $(window).on("scroll", function() {
 	if ($(window).scrollTop() > 0) {
-		$(".header.home-header").addClass("home-header-spacing");
+		$(".header.none").removeClass("none");
 
-		$(".header").removeClass("hide");
+		$(".header.top").removeClass("top");		
 
-		$(".header.project-header").addClass("project-header-spacing")
-
-		$(".header").removeClass("transparent");
-
-		// $(".return-to-top-btn").removeClass("hide");
-		
-		$(".return").removeClass("hide");
+		$(".header.transparent").removeClass("transparent");
 	} else {
-		$(".header").removeClass("home-header-spacing");
+		$(".header-home").addClass("none");
 
-		$(".header.home-header").addClass("hide");
+		$(".header-home").addClass("top");
 
-		$(".header.project-header").removeClass("project-header-spacing")
+		$(".header-landing").addClass("top");	
 
-		$(".header.project-header").addClass("transparent");
-
-		// $(".return-to-top-btn").addClass("hide");
-
-		$(".return").addClass("hide");
+		$(".header-landing").addClass("transparent");
 	}
 });
-
-function menuFunction() {
-	var x = document.getElementById("myMenu");
-
-	if (x.className === "menu") {
-		x.className += " show";
-	} else {
-		x.className = "menu";
-	}
-}
