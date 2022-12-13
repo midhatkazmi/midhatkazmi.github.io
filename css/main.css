@@ -2,13 +2,13 @@
 	--black: rgb(47, 47, 47);
 
 	--grey: rgb(127, 127, 127);
-	--grey-lite: rgb(223, 223, 223);
+	--grey-tint: rgb(223, 223, 223);
 
 	--white-translucent: rgba(255, 255, 255, 0.875);
 
 	--accent: RoyalBlue;
-	--accent-lite: rgba(65, 105, 225, 0.125);
-	--accent-highlight: linear-gradient(0deg, var(--accent-lite) 50%, transparent 50%);
+	--accent-tint: rgba(65, 105, 225, 0.125);
+	--accent-highlight: linear-gradient(0deg, var(--accent-tint) 50%, transparent 50%);
 
 	--shadow: 0 0 0.25rem rgba(0, 0, 0, 0.125);
 
@@ -43,33 +43,18 @@ body.body {
 
 /* HEADING */
 
-h1.heading, h2.heading {
-	/*margin: 1rem;*/
-
-	/*line-height: 1.25em;*/
-}
-
-h1.heading {
+h1.heading,
+h2.heading {
 	margin: 1rem;
 
 	line-height: 1.25em;
 }
 
 h2.heading {
-	margin: 1rem;
-
 	font-size: 2rem;
-	line-height: 1.25em;
 }
 
 /* SUBHEADING */
-
-h1.subheading, h2.subheading {
-	/*margin: 1rem;*/
-
-	/*font-size: 1.25rem;*/
-	/*font-weight: 600;*/
-}
 
 h1.subheading {
 	margin: 1rem 1rem 2rem 1rem;
@@ -94,7 +79,7 @@ h3.title {
 	display: inline-block;
 	padding: 0.5rem;
 
-	background-color: var(--accent-lite);
+	background-color: var(--accent-tint);
 	color: var(--accent);
 	border-radius: 0.25rem;
 
@@ -166,17 +151,13 @@ div.landing em.highlight:not(div.home em.highlight) {
 	text-decoration: underline;
 }
 
-/* FIGURE */
-
-figure.fig {}
-
 /* ABOUT FIGURE */
 
 figure.about img.img {
 	border-radius: 100%;
 }
 
-figure.about figcaption.caption:not(div.project figcaption.caption) {
+figure.about figcaption.caption/*:not(div.project figcaption.caption)*/ {
 	margin-bottom: 4rem;
 }
 
@@ -194,7 +175,8 @@ figcaption.caption:not(div.project figcaption.caption) {
 
 /* MEDIA */
 
-img.img, video.vid {
+img.img,
+video.vid {
 	display: block;
 	width: calc(100% - 2rem);
 	margin: 1rem;
@@ -212,7 +194,7 @@ header.header {
 	box-shadow: var(--shadow);
 	backdrop-filter: blur(0.25rem);
 
-	transition: opacity 0.25s, visibility 0.25s;
+	transition: background 0.25s, opacity 0.25s, visibility 0.25s;
 }
 
 header.header div.spacing {
@@ -229,6 +211,8 @@ header.header a.link {
 
 	font-size: 0.75rem;
 	font-weight: 500;
+
+	transition: color 0.25s;
 }
 
 header.header a.link:hover, header.header a.link:focus {
@@ -284,7 +268,7 @@ footer.footer div.spacing {
 }
 
 time.time {
-	color: var(--grey-lite);
+	color: var(--grey-tint);
 }
 
 footer.footer a.link {
@@ -301,14 +285,14 @@ footer.footer a.link + a.link {
 }
 
 footer.footer a.link:hover, footer.footer a.link:focus {
-	color: var(--grey-lite);
+	color: var(--grey-tint);
 }
 
 div.scroll-to-top a.link {
 	padding: 0.5rem 0.75rem;
 
 	background-color: var(--grey);
-	color: var(--grey-lite);
+	color: var(--grey-tint);
 	border-radius: 2rem;
 
 	transition: background-color 0.25s, color 0.25s;
@@ -330,10 +314,10 @@ div.landing div.spacing {
 	padding: 8rem;
 }
 
-div.landing h2.subheading {
-	/*font-size: 1.5rem;*/
-	/*font-weight: 700;*/
-}
+/*div.landing h2.subheading {
+	font-size: 1.5rem;
+	font-weight: 700;
+}*/
 
 div.home p.text {
 	font-weight: 500;
@@ -352,7 +336,7 @@ div.home div.spacing {
 /* HIGHLIGHT CONTAINER */
 
 div.highlight {
-	background-color: var(--accent-lite);
+	background-color: var(--accent-tint);
 }
 
 div.highlight div.spacing {
@@ -383,7 +367,7 @@ hr.divider {
 	margin: 0 9rem;
 
 	border: none;
-	border-top: solid 0.0625rem var(--grey-lite);
+	border-top: solid 0.0625rem var(--grey-tint);
 }
 
 /* CONTENT CONTAINER */
@@ -392,9 +376,9 @@ div.content {
 	padding: 8rem;
 }
 
-div.content + div.content {
-	/*padding-top: 0;*/
-}
+/*div.content + div.content {
+	padding-top: 0;
+}*/
 
 /* CONTACT BUTTON */
 
@@ -444,7 +428,7 @@ div#contact a.link {
 	text-transform: uppercase;
 	letter-spacing: 0.03125rem;
 
-	transition: background-color 0.25s, border-color 0.25s;
+	transition: background-color 0.25s, color 0.25s, border-color 0.25s;
 }
 
 div#contact a.link:hover, div#contact a.link:focus {
@@ -522,7 +506,7 @@ div.project a.link {
 	border-radius: 1rem;
 	box-shadow: var(--shadow);
 
-	transition: background-color 0.25s, border 0.25s;
+	transition: background-color 0.25s, color 0.25s, border 0.25s;
 }
 
 div.project a.link:hover, div.project a.link:focus {
@@ -548,18 +532,15 @@ div.project h2.subheading {
 	font-weight: 700;
 }
 
-/*div.project p.text:first-child {*/
 div.project p.details {
 	font-size: 0.875rem;
 	font-weight: 500;
 }
 
-/*div.project p.text:nth-child(3) {*/
 div.project p.description {
 	font-weight: 500;
 }
 
-/*div.project p.text:last-child {*/
 div.project p.action {
 	display: inline-block;
 	margin-top: 0;
@@ -573,6 +554,32 @@ div.project a.link:hover p.action, div.project a.link:focus p.action {
 	margin-left: 2rem;
 
 	background: var(--accent-highlight);
+}
+
+div.grid + figure.fig {
+	margin-top: 4rem;
+}
+
+figure.fig + div.grid {
+	margin-top: 4rem;
+}
+
+div.title + h2.subheading,
+div.title + h4.subtitle {
+	margin-top: 2rem;
+}
+
+div.content p.text + h2.subheading,
+p.text + h4.subtitle {
+	margin-top: 4rem;
+}
+
+div.button + div.grid {
+	margin-top: 2rem;
+}
+
+figure.fig + div.button {
+	/*margin-top: 4rem;*/
 }
 
 /* TABLET WIDTH */
@@ -597,25 +604,26 @@ div.project a.link:hover p.action, div.project a.link:focus p.action {
 @media screen and (max-width: 26.75rem) {
 	h1.heading {
 		/*font-size: 2rem;*/
-		/*font-size: 1.75rem;*/
+		font-size: 1.75rem;
 	}
 
 	h1.subheading {
 		/*font-size: 1.5rem;*/
-		/*font-size: 1.25rem;*/
+		font-size: 1.25rem;
 	}
 
 	h2.heading:not(div.landing h2.heading) {
 		/*font-size: 2rem;*/
 		/*font-size: 1.5rem;*/
+		font-size: 1.75rem;
 	}
 
 	div.landing h2.heading {
 		/*margin-bottom: 1rem;*/
-		/*margin-bottom: 2rem;*/
+		margin-bottom: 2rem;
 
 		/*font-size: 2rem;*/
-		/*font-size: 1.75rem;*/
+		font-size: 1.75rem;
 	}
 
 	div.more-projects a.link {
@@ -700,14 +708,14 @@ div.project a.link:hover p.action, div.project a.link:focus p.action {
 	footer.footer a.link:not(div.scroll-to-top a.link) {
 		display: block;
 		/*margin-bottom: 1rem;*/
-		/*margin-bottom: 2rem;*/
+		margin-bottom: 2rem;
 
-		color: var(--grey-lite);
+		color: var(--grey-tint);
 	}
 
 	footer.footer a.link:nth-child(3) {
 		/*margin-bottom: 1rem;*/
-		margin-bottom: 2rem;
+		/*margin-bottom: 2rem;*/
 	}
 
 	footer.footer a.link + a.link {
@@ -758,12 +766,13 @@ div.project a.link:hover p.action, div.project a.link:focus p.action {
 		/*font-size: 1.25rem;*/
 	}
 
-	div.project p.text:first-child {
+	div.project p.details {
 		/*font-size: 0.875rem;*/
 		/*font-size: 0.75rem;*/
 	}
 
-	div.project p.text:nth-child(3), div.project p.text:last-child {
+	div.project p.description,
+	div.project p.action {
 		/*font-size: 1rem;*/
 		/*font-size: 0.875rem;*/
 	}
@@ -778,10 +787,28 @@ div.project a.link:hover p.action, div.project a.link:focus p.action {
 
 	div.highlight h3.title {
 		/*font-weight: 600;*/
-		font-weight: 500;
+		/*font-weight: 500;*/
 	}
 
 	hr.divider {
 		margin: 0 2rem;
+	}
+
+	div.grid + figure.fig {
+		margin-top: 2rem;
+	}
+
+	figure.fig + div.grid {
+		margin-top: 2rem;
+	}
+
+	div.title + h2.subheading,
+	div.title + h4.subtitle {
+		margin-top: 1rem;
+	}
+
+	div.content p.text + h2.subheading,
+	p.text + h4.subtitle {
+		margin-top: 2rem;
 	}
 }

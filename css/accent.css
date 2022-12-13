@@ -1,23 +1,23 @@
 * {
 	--liftfit: rgb(49, 79, 114);
-	--liftfit-lite: rgba(49, 79, 114, 0.125);
-	--liftfit-highlight: linear-gradient(0deg, var(--liftfit-lite) 50%, transparent 50%);
+	--liftfit-tint: rgba(49, 79, 114, 0.125);
+	--liftfit-highlight: linear-gradient(0deg, var(--liftfit-tint) 50%, transparent 50%);
 
 	--sfu: rgb(204, 6, 51);
-	--sfu-lite: rgba(204, 6, 51, 0.125);
-	--sfu-highlight: linear-gradient(0deg, var(--sfu-lite) 50%, transparent 50%);
+	--sfu-tint: rgba(204, 6, 51, 0.125);
+	--sfu-highlight: linear-gradient(0deg, var(--sfu-tint) 50%, transparent 50%);
 
 	--accentedge: rgb(204, 32, 39);
-	--accentedge-lite: rgba(204, 32, 39, 0.125);
-	--accentedge-highlight: linear-gradient(0deg, var(--accentedge-lite) 50%, transparent 50%);
+	--accentedge-tint: rgba(204, 32, 39, 0.125);
+	--accentedge-highlight: linear-gradient(0deg, var(--accentedge-tint) 50%, transparent 50%);
 
 	--ted: rgb(230, 43, 30);
-	--ted-lite: rgba(230, 43, 30, 0.125);
-	--ted-highlight: linear-gradient(0deg, var(--ted-lite) 50%, transparent 50%);
+	--ted-tint: rgba(230, 43, 30, 0.125);
+	--ted-highlight: linear-gradient(0deg, var(--ted-tint) 50%, transparent 50%);
 
 	--slate: rgb(0, 120, 186);
-	--slate-lite: rgba(0, 120, 186, 0.125);
-	--slate-highlight: linear-gradient(0deg, var(--slate-lite) 50%, transparent 50%);
+	--slate-tint: rgba(0, 120, 186, 0.125);
+	--slate-highlight: linear-gradient(0deg, var(--slate-tint) 50%, transparent 50%);
 }
 
 /* LIFTFIT PROJECT CONTAINER */
@@ -43,7 +43,7 @@ main.liftfit div.landing {
 }
 
 main.liftfit h3.title:not(div.more-projects h3.title) {
-	background-color: var(--liftfit-lite);
+	background-color: var(--liftfit-tint);
 	color: var(--liftfit);
 }
 
@@ -75,12 +75,17 @@ main.sfu div.landing {
 }
 
 main.sfu h3.title:not(div.more-projects h3.title) {
-	background-color: var(--sfu-lite);
+	background-color: var(--sfu-tint);
+	color: var(--sfu);
+}
+
+main.sfu em.highlight {
+	background: var(--sfu-highlight);
 	color: var(--sfu);
 }
 
 main.sfu div.highlight {
-	background-color: var(--sfu-lite);
+	background-color: var(--sfu-tint);
 }
 
 main.sfu div.highlight div.title h3.title {
