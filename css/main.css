@@ -218,6 +218,11 @@ header.header a.link {
 }
 
 header.header a.link:hover, header.header a.link:focus {
+	/*color: var(--accent);*/
+	color: var(--black);
+}
+
+header.header a.link:active {
 	color: var(--accent);
 }
 
@@ -490,7 +495,8 @@ div.project {
 /* FIRST PROJECT CONTAINER AFTER LANDING */
 
 div.project:first-child {
-	padding-top: 8rem;
+	/*padding-top: 8rem;*/
+	padding-top: 0;
 }
 
 /* LAST PROJECT CONTAINER BEFORE FOOTER */
@@ -584,6 +590,56 @@ figure.fig + div.button {
 	/*margin-top: 4rem;*/
 }
 
+#allGraphicDesign {
+	display: none;
+}
+
+abbr.abbreviation {
+	cursor: help;
+}
+
+nav {
+	padding: 8rem 8rem 0 8rem;
+
+	text-align: right;
+}
+
+button {
+	margin: 1rem;
+	padding: 0.5rem;
+
+	background-color: transparent;
+	color: var(--black);
+	border: none;
+	border-radius: 0.25rem;
+
+	font-size: 0.75rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.03125rem;
+
+	transition: background-color 0.25s, color 0.25s;
+}
+
+button:hover, button:focus {
+	background-color: var(--accent-tint);
+	color: var(--accent);
+}
+
+button:active {
+	background-color: var(--accent);
+	color: white;
+}
+
+button + button {
+	margin-left: 0;
+}
+
+button.selected {
+	background-color: var(--accent);
+	color: white;
+}
+
 /* TABLET WIDTH */
 
 @media screen and (max-width: 50.625rem) {
@@ -598,6 +654,14 @@ figure.fig + div.button {
 
 	div.project figcaption.caption {
 		padding: 1rem 3rem 3rem 3rem;
+	}
+
+	abbr.abbreviation {
+		text-decoration: none;
+	}
+
+	abbr.abbreviation:after {
+		content: " ("attr(title)")";
 	}
 }
 
@@ -813,19 +877,14 @@ figure.fig + div.button {
 	p.text + h4.subtitle {
 		margin-top: 2rem;
 	}
+
+	nav {
+		padding: 1rem 1rem 0 1rem;
+
+		text-align: center;
+	}
+
+	button {
+		margin-bottom: 0;
+	}
 }
-
-/*.test {
-	margin: 1rem 1rem 2rem 1rem;
-
-	text-align: right;
-}
-
-.test .title + .title {
-	margin-left: 1rem;
-}
-
-.test .title:nth-child(2) {
-	background-color: var(--accent);
-	color: white;
-}*/

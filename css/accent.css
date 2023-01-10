@@ -7,17 +7,17 @@
 	--sfu-tint: rgba(204, 6, 51, 0.125);
 	--sfu-highlight: linear-gradient(0deg, var(--sfu-tint) 50%, transparent 50%);
 
-	--accentedge: rgb(204, 32, 39);
-	--accentedge-tint: rgba(204, 32, 39, 0.125);
-	--accentedge-highlight: linear-gradient(0deg, var(--accentedge-tint) 50%, transparent 50%);
-
-	--ted: rgb(230, 43, 30);
-	--ted-tint: rgba(230, 43, 30, 0.125);
-	--ted-highlight: linear-gradient(0deg, var(--ted-tint) 50%, transparent 50%);
-
 	--slate: rgb(0, 120, 186);
 	--slate-tint: rgba(0, 120, 186, 0.125);
 	--slate-highlight: linear-gradient(0deg, var(--slate-tint) 50%, transparent 50%);
+
+	--baabulilm: rgb(250, 175, 64);
+	--baabulilm-tint: rgba(250, 175, 64, 0.125);
+	--baabulilm-highlight: linear-gradient(0deg, var(--baabulilm-tint) 50%, transparent 50%);
+
+	--accentedge: rgb(204, 32, 39);
+	--accentedge-tint: rgba(204, 32, 39, 0.125);
+	--accentedge-highlight: linear-gradient(0deg, var(--accentedge-tint) 50%, transparent 50%);
 }
 
 /* LIFTFIT PROJECT CONTAINER */
@@ -103,6 +103,73 @@ main.sfu div.button a.link:hover, main.sfu div.button a.link:focus {
 	color: var(--sfu);
 }
 
+/* GOGRAD PROJECT CONTAINER */
+
+div.project.slate a.link:hover, div.project.slate a.link:focus {
+	color: var(--slate);
+	border-color: var(--slate);
+}
+
+div.project.slate a.link:active {
+	background-color: var(--slate);
+	color: white;
+}
+
+div.project.slate a.link:hover p.text:last-child, div.project.slate a.link:focus p.text:last-child {
+	background: var(--slate-highlight);
+}
+
+/* BAABUL ILM PROJECT CONTAINER */
+
+div.project.baabulilm a.link:hover, div.project.baabulilm a.link:focus {
+	color: var(--baabulilm);
+	border-color: var(--baabulilm);
+}
+
+div.project.baabulilm a.link:active {
+	background-color: var(--baabulilm);
+	color: white;
+}
+
+div.project.baabulilm a.link:hover p.text:last-child, div.project.baabulilm a.link:focus p.text:last-child {
+	background: var(--baabulilm-highlight);
+}
+
+/* BAABUL ILM PROJECT PAGE */
+
+main.baabulilm div.landing {
+	background-color: var(--baabulilm);
+}
+
+main.baabulilm h3.title:not(div.more-projects h3.title) {
+	background-color: var(--baabulilm-tint);
+	color: var(--baabulilm);
+}
+
+main.baabulilm em.highlight {
+	background: var(--baabulilm-highlight);
+	color: var(--baabulilm);
+}
+
+main.baabulilm div.highlight {
+	background-color: var(--baabulilm-tint);
+}
+
+main.baabulilm div.highlight div.title h3.title {
+	background-color: var(--baabulilm);
+	color: white;
+}
+
+main.baabulilm div.button a.link {
+	background-color: var(--baabulilm);
+	border-color: var(--baabulilm);
+}
+
+main.baabulilm div.button a.link:hover, main.sfu div.button a.link:focus {
+	background-color: white;
+	color: var(--baabulilm);
+}
+
 /* ACCENTEDGE PROJECT CONTAINER */
 
 div.project.accentedge a.link:hover, div.project.accentedge a.link:focus {
@@ -119,34 +186,37 @@ div.project.accentedge a.link:hover p.text:last-child, div.project.accentedge a.
 	background: var(--accentedge-highlight);
 }
 
-/* TEDXSFU PROJECT CONTAINER */
+/* ACCENTEDGE PROJECT PAGE */
 
-div.project.ted a.link:hover, div.project.ted a.link:focus {
-	color: var(--ted);
-	border-color: var(--ted);
+main.accentedge div.landing {
+	background-color: var(--accentedge);
 }
 
-div.project.ted a.link:active {
-	background-color: var(--ted);
+main.accentedge h3.title:not(div.more-projects h3.title) {
+	background-color: var(--accentedge-tint);
+	color: var(--accentedge);
+}
+
+main.accentedge em.highlight {
+	background: var(--accentedge-highlight);
+	color: var(--accentedge);
+}
+
+main.accentedge div.highlight {
+	background-color: var(--accentedge-tint);
+}
+
+main.accentedge div.highlight div.title h3.title {
+	background-color: var(--accentedge);
 	color: white;
 }
 
-div.project.ted a.link:hover p.text:last-child, div.project.ted a.link:focus p.text:last-child {
-	background: var(--ted-highlight);
+main.accentedge div.button a.link {
+	background-color: var(--accentedge);
+	border-color: var(--accentedge);
 }
 
-/* GOGRAD PROJECT CONTAINER */
-
-div.project.slate a.link:hover, div.project.slate a.link:focus {
-	color: var(--slate);
-	border-color: var(--slate);
-}
-
-div.project.slate a.link:active {
-	background-color: var(--slate);
-	color: white;
-}
-
-div.project.slate a.link:hover p.text:last-child, div.project.slate a.link:focus p.text:last-child {
-	background: var(--slate-highlight);
+main.accentedge div.button a.link:hover, main.sfu div.button a.link:focus {
+	background-color: white;
+	color: var(--accentedge);
 }
