@@ -624,6 +624,8 @@ button {
 button:hover, button:focus {
 	background-color: var(--accent-tint);
 	color: var(--accent);
+
+	cursor: pointer;
 }
 
 button:active {
