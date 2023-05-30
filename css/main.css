@@ -6,10 +6,12 @@
 
 	--white-translucent: rgba(255, 255, 255, 0.875);
 
-	--accent: RoyalBlue;
-	--accent-tint: rgba(65, 105, 225, 0.125);
+	/*--accent: RoyalBlue;*/
+	/*--accent-tint: rgba(65, 105, 225, 0.125);*/
 	/*--accent: SeaGreen;*/
 	/*--accent-tint: rgba(46, 139, 87, 0.125);*/
+	--accent: #5274FA;
+	--accent-tint: rgba(82, 116, 250, 0.125);
 	--accent-highlight: linear-gradient(0deg, var(--accent-tint) 50%, transparent 50%);
 
 	--shadow: 0 0 0.25rem rgba(0, 0, 0, 0.125);
@@ -588,10 +590,6 @@ div.button + div.grid {
 
 figure.fig + div.button {
 	/*margin-top: 4rem;*/
-}
-
-#allGraphicDesign {
-	display: none;
 }
 
 abbr.abbreviation {
