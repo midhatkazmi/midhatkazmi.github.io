@@ -1,373 +1,400 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
+		<!-- <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."> -->
+
+		<!-- <meta name="keywords" content="lorem, ipsum"> -->
+
 		<link rel="icon" href="img/favicon.png">
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+		<link rel="stylesheet" type="text/css" href="css/dark.css">
 
-		<link rel="stylesheet" type="text/css" href="css/accent.css">
+		<link rel="stylesheet" type="text/css" href="css/flex.css">
 
-		<link rel="stylesheet" type="text/css" href="css/grid.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		
+
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		
-		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&family=Noto+Color+Emoji&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap&text=→←" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap" rel="stylesheet">
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		
 		<title>
-			Midhat Kazmi, UI Designer &amp; Developer.
+			Midhat Kazmi, Portfolio.
 		</title>
 	</head>
 
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-89857L69CD"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
+	<body id="Body" class="body">
+	<!-- <body id="Body" class="body dark"> -->
+		<header class="header">
+			<div class="col-container">
+				<div class="col-item">
+					<a class="link" href="javascript:void(0)" onclick="toggleTheme()"><span class="material-symbols-rounded">dark_mode</span></a>
+				</div>
 
-		gtag('config', 'G-89857L69CD');
-	</script>
+				<div class="col-item">
+					<nav class="nav">
+						<div class="flex-container">
+							<div class="flex-item">
+								<a class="link" href="#Projects">Projects</a>
+							</div>
 
-	<body class="body">
-		<header class="header header-home top none">
-			<div class="max-width">
-				<div class="spacing">
-					<div class="nav-container">
-						<div class="nav-item">
-							<a class="link" href="index.html">
-								Midhat Kazmi
-							</a>
+							<div class="flex-item">
+								<a class="link" href="#About">About</a>
+							</div>
+
+							<div class="flex-item">
+								<a class="link" href="#Contact">Contact</a>
+							</div>
+
+							<div class="flex-item">
+								<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">Resume</a>
+							</div>
 						</div>
+					</nav>
+				</div>
 
-						<div class="nav-item">
-							<a class="link" href="about.html">
-								About
-							</a>
-
-							<a class="link" href="about.html#contact">
-								Contact
-							</a>
-						</div>
-					</div>
+				<div class="col-item">
+					<a class="link" href="#"><span class="material-symbols-rounded">arrow_upward</span></a>
 				</div>
 			</div>
 		</header>
 
 		<main>
-			<div class="landing home">
-				<div class="max-width">
-					<div class="spacing">
-						<h1 class="subheading">
-							Hi. &#128075;&#127996; I'm Midhat, a User Interface Designer and Developer.
-						</h1>
+			<section class="section landing">
+				<h1 class="heading">
+					Hi, my name is <abbr class="abbreviation" title="Pronounced /mid-hat kaz-me/. As phonetic as it gets!" tabindex="0">Midhat Kazmi</abbr>. &#128075;
+				</h1>
 
-						<h2 class="heading">
-							I combine <em class="highlight">branding and responsive design</em> to craft beautiful experiences across both <em class="highlight">print and digital touchpoints</em>.
-						</h2>
+				<h2 class="subheading">
+					I'm a <mark class="highlight">User Interface Designer &amp; Developer</mark> who combines branding and responsive design to craft beautiful interfaces across digital touchpoints.
+				</h2>
 
-						<p class="text">
-							Learn more <a class="link" href="about.html">about me</a>, or check out my work <a class="link" href="#work">below</a>. &darr;
-						</p>
-					</div>
-				</div>
-			</div>
+				<p class="text">
+					Learn more <a class="link" href="#About">about me</a>, or check out my work <a class="link" href="#Projects">below</a>. &darr;
+				</p>
+			</section>
 
-			<div class="max-width">
-				<nav id="work">	
-					<button id="buttonAll" class="selected" onclick="allProjects()">
-						All
-					</button><button id="buttonUXUI" onclick="onlyUXUI()">
-						UX/UI
-					</button><button id="buttonGraphicDesign" onclick="onlyGraphicDesign()">
-						Graphic Design
-					</button>
-				</nav>
-
-				<div id="allUXUI">
-					<div class="project slate">
-						<a class="link">
-							<figure class="fig">
-								<div class="flex-container">
-									<div class="flex-item">
-										<img class="img" src="img/gograd/thumbnail.png">
-									</div>
-
-									<div class="flex-item">
-										<figcaption class="caption">
-											<p class="text details">
-												UX Analyst &bull; SFU / 2022
-											</p>
-
-											<h2 class="subheading">
-												goGrad
-											</h2>
-
-											<p class="text description">
-												New graduate studies admissions and awards system.
-											</p>
-
-											<p class="text action">
-												Coming soon. &#128640;
-											</p>
-										</figcaption>
-									</div>
-								</div>
-							</figure>
-						</a>
-					</div>
-
-					<div class="project sfu">
-						<a class="link" href="edi.html">
-							<figure class="fig">
-								<div class="flex-container">
-									<div class="flex-item">
-										<img class="img" src="img/edi/thumbnail.png">
-									</div>
-
-									<div class="flex-item">
-										<figcaption class="caption">
-											<p class="text details">
-												Interactive Training Developer &bull; SFU / 2021
-											</p>
-
-											<h2 class="subheading">
-												EDI in Hiring Training Module
-											</h2>
-
-											<p class="text description">
-												An interactive training course that teaches fair and equitable practices in hiring Canada Research Chairs.
-											</p>
-
-											<p class="text action">
-												View Project &rarr;
-											</p>
-										</figcaption>
-									</div>
-								</div>
-							</figure>
-						</a>
-					</div>
-
-					<div class="project liftfit">
-						<a class="link" href="liftfit.html">
-							<figure class="fig">
-								<div class="flex-container">
-									<div class="flex-item">
-										<img class="img" src="img/liftfit/thumbnail.png">
-									</div>
-
-									<div class="flex-item">
-										<figcaption class="caption">
-											<p class="text details">
-												Academic project &bull; Interface Design / 2018
-											</p>
-
-											<h2 class="subheading">
-												LiftFit
-											</h2>
-
-											<p class="text description">
-												A progress tracking weight-training smartphone app prototype based on user research and testing.
-											</p>
-
-											<p class="text action">
-												View Project &rarr;
-											</p>
-										</figcaption>
-									</div>
-								</div>
-							</figure>
-						</a>
-					</div>
-				</div>
-
-				<div id="allGraphicDesign">
-					<div class="project accentedge">
-						<a class="link" href="accentedge.html">
-							<figure class="fig">
-								<div class="flex-container">
-									<div class="flex-item">
-										<img class="img" src="img/accentedge/guidelines.png">
-									</div>
-
-									<div class="flex-item">
-										<figcaption class="caption">
-											<p class="text details">
-												Graphic Designer &bull; accentedge / 2018
-											</p>
-
-											<h2 class="subheading">
-												accentedge Branding Guidelines
-											</h2>
-
-											<p class="text description">
-												Branding guidelines for a digital consultation startup.
-											</p>
-
-											<p class="text action">
-												View Project &rarr;
-											</p>
-										</figcaption>
-									</div>
-								</div>
-							</figure>
-						</a>
-					</div>
-
-					<div class="project sfu">
-						<a class="link" href="gps.html">
-							<figure class="fig">
-								<div class="flex-container">
-									<div class="flex-item">
-										<img class="img" src="img/gps/materials.png">
-									</div>
-
-									<div class="flex-item">
-										<figcaption class="caption">
-											<p class="text details">
-												Marketing & Communications Associate &bull; SFU / 2018
-											</p>
-
-											<h2 class="subheading">
-												Graduate & Postdoctoral Studies Communications
-											</h2>
-
-											<p class="text description">
-												Graphics for a graduate studies university department.
-											</p>
-
-											<p class="text action">
-												View Project &rarr;
-											</p>
-										</figcaption>
-									</div>
-								</div>
-							</figure>
-						</a>
-					</div>
-
-					<div class="project baabulilm">
-						<a class="link" href="baabulilm.html">
-							<figure class="fig">
-								<div class="flex-container">
-									<div class="flex-item">
-										<img class="img" src="img/baabulilm/logo.png">
-									</div>
-
-									<div class="flex-item">
-										<figcaption class="caption">
-											<p class="text details">
-												Graphic Designer &bull; Baabul Ilm Education Society / 2018
-											</p>
-
-											<h2 class="subheading">
-												Baabul Ilm Logo
-											</h2>
-
-											<p class="text description">
-												Logo for a religious scholarship organization.
-											</p>
-
-											<p class="text action">
-												View Project &rarr;
-											</p>
-										</figcaption>
-									</div>
-								</div>
-							</figure>
-						</a>
-					</div>
-
-					<div class="project">
-						<a class="link" href="graphics.html">
-							<figure class="fig">
-								<div class="flex-container">
-									<div class="flex-item">
-										<img class="img" src="img/graphics/designs.gif">
-									</div>
-
-									<div class="flex-item">
-										<figcaption class="caption">
-											<p class="text details">
-												Design Contractor &bull; Present
-											</p>
-
-											<h2 class="subheading">
-												Graphic Design Projects
-											</h2>
-
-											<p class="text description">
-												Professional and contract work for various organizations in branding and identity and graphic design deliverables.
-											</p>
-
-											<p class="text action">
-												View Project &rarr;
-											</p>
-										</figcaption>
-									</div>
-								</div>
-							</figure>
-						</a>
-					</div>
-				</div>
-			</div>
-		</main>
-
-		<footer class="footer">
-			<div class="max-width">
-				<div class="spacing">
-					<div class="nav-container">
-						<div class="nav-item">
-							<a class="link" href="mailto:midhat.design@gmail.com" target="_blank">
-								midhat.design@gmail.com
-							</a>
-
-							<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">
-								Resume
-							</a>
-
-							<a class="link" href="https://www.linkedin.com/in/midhatkazmi/" target="_blank">
-								LinkedIn
-							</a>
-
-							<p class="text">
-								&copy; Midhat Kazmi, updated <time class="time">June 2023</time>&mdash;designed and coded with the help of chai. &#9749;
-							</p>
+			<section id="Projects" class="section">
+				<div class="project">
+					<div class="flex-container">
+						<div class="flex-item">
+							<img class="img" src="img/landscape.png">
 						</div>
 
-						<div class="nav-item">
-							<div class="scroll-to-top">
-								<a class="link" href="#">
-									Scroll to top &uarr;
-								</a>
+						<div class="flex-item">
+							<div class="col-container">
+								<div class="col-item">
+									<h3 class="title">
+										goGrad
+									</h3>
+
+									<p class="text">
+										New graduate studies admissions and awards system.
+									</p>
+
+									<div class="labels">
+										<div class="label-container">
+											<div class="label-item">
+												<div class="label">
+													HTML
+												</div>
+											</div>
+
+											<div class="label-item">
+												<div class="label">
+													CSS
+												</div>
+											</div>
+
+											<div class="label-item">
+												<div class="label">
+													JavaScript
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-item">
+									<div class="flex-container">
+										<div class="flex-item">
+											<a class="link" href="" target="_blank">Project Page</a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<div class="mobile-header-spacing">
-				&nbsp;
-			</div>
+				<div class="project">
+					<div class="flex-container">
+						<div class="flex-item">
+							<img class="img" src="img/landscape.png">
+						</div>
+
+						<div class="flex-item">
+							<div class="col-container">
+								<div class="col-item">
+									<h3 class="title">
+										EDI in Hiring Training Module
+									</h3>
+
+									<p class="text">
+										An interactive training course that teaches fair and equitable practices in hiring Canada Research Chairs.
+									</p>
+
+									<div class="labels">
+										<div class="label-container">
+											<div class="label-item">
+												<div class="label">
+													HTML
+												</div>
+											</div>
+
+											<div class="label-item">
+												<div class="label">
+													CSS
+												</div>
+											</div>
+
+											<div class="label-item">
+												<div class="label">
+													Articulate Storyline 360
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-item">
+									<div class="flex-container">
+										<div class="flex-item">
+											<a class="link" href="" target="_blank">Interactive Prototype</a>
+										</div>
+
+										<div class="flex-item">
+											<a class="link" href="" target="_blank">Project Page</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project">
+					<div class="flex-container">
+						<div class="flex-item">
+							<img class="img" src="img/landscape.png">
+						</div>
+
+						<div class="flex-item">
+							<div class="col-container">
+								<div class="col-item">
+									<h3 class="title">
+										LiftFit
+									</h3>
+
+									<p class="text">
+										A progress tracking weight-training smartphone app prototype based on user research and testing.
+									</p>
+
+									<div class="labels">
+										<div class="label-container">
+											<div class="label-item">
+												<div class="label">
+													Adobe XD
+												</div>
+											</div>
+
+											<div class="label-item">
+												<div class="label">
+													Figma
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-item">
+									<div class="flex-container">
+										<div class="flex-item">
+											<a class="link" href="" target="_blank">Interactive Prototype</a>
+										</div>
+
+										<div class="flex-item">
+											<a class="link" href="" target="_blank">Project Page</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="project">
+					<div class="flex-container">
+						<div class="flex-item">
+							<img class="img" src="img/landscape.png">
+						</div>
+
+						<div class="flex-item">
+							<div class="col-container">
+								<div class="col-item">
+									<h3 class="title">
+										Graphic Design Projects
+									</h3>
+
+									<p class="text">
+										Professional and contract work for various organizations in branding and identity and graphic design deliverables.
+									</p>
+
+									<div class="labels">
+										<div class="label-container">
+											<div class="label-item">
+												<div class="label">
+													Illustrator
+												</div>
+											</div>
+
+											<div class="label-item">
+												<div class="label">
+													Photoshop
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-item">
+									<div class="flex-container">
+										<div class="flex-item">
+											<a class="link" href="" target="_blank">Project Page</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="About" class="section">
+				<p class="text">
+					I graduated with a Bachelor's in the <a class="link" href="https://www.sfu.ca/siat.html" target="_blank">School of Interactive Arts and Technology</a> with a specialization in Design at <a class="link" href="https://www.sfu.ca/" target="_blank">Simon Fraser University</a>.
+				</p>
+
+				<p class="text">
+					 Originally more of an artist, I started getting into design when I was asked to create a jersey for my high school team, eventually landing on user interface design. But I wanted to do more than design mockups and prototypes; I wanted to implement the functionality. This lead me to web development, where I continue my journey into frontend and fullstack development and beyond.
+				</p>
+
+				<p class="text">
+					Outside the code-o-sphere, I can be found drawing while listening to mystery podcasts, playing old video games <abbr class="abbreviation" title="All I had to do was follow the dang train. &#129318;&#8205;&#9794;&#65039;" tabindex="0">I couldn't beat as a kid</abbr> or expanding my vocabulary in my native language. 
+				</p>
+
+				<div class="flex-container">
+					<div class="flex-item">
+						<h4 class="subtitle">
+							Tech Stack
+						</h4>
+
+						<div class="badge-container">
+							<div class="badge-item">
+								<img class="img badge" src="img/html.svg">
+							</div>
+
+							<div class="badge-item">
+								<img class="img badge" src="img/css.svg">
+							</div>
+
+							<div class="badge-item">
+								<img class="img badge" src="img/python.svg">
+							</div>
+						</div>
+					</div>
+
+					<div class="flex-item">
+						<h4 class="subtitle">
+							Tools
+						</h4>
+
+						<div class="badge-container">
+							<div class="badge-item">
+								<img class="img badge" src="img/pycharm.svg">
+							</div>
+
+							<div class="badge-item">
+								<img class="img badge" src="img/vscode.svg">
+							</div>
+
+							<div class="badge-item">
+								<img class="img badge" src="img/sublime.png">
+							</div>
+
+							<div class="badge-item">
+								<img class="img badge" src="img/figma.svg">
+							</div>
+
+							<div class="badge-item">
+								<img class="img badge" src="img/illustrator.svg">
+							</div>
+
+							<div class="badge-item">
+								<img class="img badge" src="img/photoshop.svg">
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer id="Contact" class="footer">
+			<section class="section">
+				<h2 class="subheading">
+					Thanks for visiting. Let's <mark class="highlight">connect</mark>.
+				</h2>
+
+				<div class="footer-container">
+					<div class="footer-item">
+						<a class="link" href="mailto:midhatkazmi.01@gmail.com">Email</a>
+					</div>
+
+					<div class="footer-item">
+						<a class="link" href="https://www.github.com/midhatkazmi/" target="_blank">GitHub</a>
+					</div>
+
+					<div class="footer-item">
+						<a class="link" href="https://www.linkedin.com/in/midhatkazmi/" target="_blank">LinkedIn</a>
+					</div>
+
+					<div class="footer-item">
+						<a class="link" href="https://www.read.cv/midhatkazmi/" target="_blank">Read.cv</a>
+					</div>
+
+					<div class="footer-item">
+						<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">Resume</a>
+					</div>
+				</div>
+
+				<p class="text">
+					&copy; Midhat Kazmi, updated August 2024&mdash;designed &amp; coded with the help of chai. &#9749;
+				</p>
+			</section>
 		</footer>
 
-		<script type="text/javascript" src="js/code.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
