@@ -7,11 +7,12 @@
 	--lightgray: rgb(191, 191, 191);
 	--accent: rgb(65, 105, 225);
 	--accent-tint: rgba(65, 105, 225, 0.125);
+	--accent-highlight: linear-gradient(0deg, var(--accent-tint) 50%, transparent 50%);
 
 	--shadow: 0 0 0.25rem rgba(0, 0, 0, 0.25);
 
 	--div-radius: 0.5rem;
-	--button-radius: 0.25rem;
+	--btn-radius: 0.25rem;
 	--label-radius: 0.125rem;
 
 	--light: 300;
@@ -25,6 +26,8 @@
 	font-family: 'Poppins', 'Inter', 'Noto Color Emoji', sans-serif;
 
 	scroll-behavior: smooth;
+	transition-property: display, position, top, bottom, width, height, flex-direction, flex-basis, justify-content, gap, margin, padding, background, color, border, box-shadow, opacity, font-size, font-weight, text-align, text-decoration-color, content;
+	transition-duration: 0.25s;
 }
 
 header.header {
@@ -43,7 +46,7 @@ header.header a.link {
 	display: block;
 	
 	border: solid 1pt transparent;
-	border-radius: var(--button-radius);
+	border-radius: var(--btn-radius);
 	opacity: 0.25;
 
 	line-height: 1em;
@@ -87,6 +90,35 @@ section.landing {
 	min-height: 100vh;
 }
 
+a.link.project {
+	display: block;
+	margin: 1rem;
+	padding: 1rem;
+
+	border: solid 1pt transparent;
+	border-radius: var(--div-radius);
+	box-shadow: var(--shadow);
+}
+
+a.project + a.project {
+	margin-top: 4rem;
+}
+
+a.project:hover,
+a.project:focus {
+	color: var(--accent);
+	border-color: var(--accent);
+}
+
+a.project:active {
+	background-color: var(--accent-tint);
+}
+
+a.project img.img {
+	width: 100%;
+	padding: 1rem;
+}
+
 footer.footer {
 	margin: var(--header-width);
 	
@@ -109,7 +141,7 @@ footer.footer a.link {
 	padding: 0.5rem;
 
 	border: solid 1pt transparent;
-	border-radius: var(--button-radius);
+	border-radius: var(--btn-radius);
 
 	font-size: 0.75rem;
 	font-weight: var(--medium);
@@ -128,18 +160,6 @@ footer.footer a.link:active {
 	color: var(--white);
 }
 
-div.project {
-	margin: 1rem;
-	padding: 1rem;
-
-	border-radius: var(--div-radius);
-	box-shadow: var(--shadow);
-}
-
-div.project + div.project {
-	margin-top: 4rem;
-}
-
 div.labels {
 	margin: 1rem;
 
@@ -156,14 +176,11 @@ div.label {
 	border-radius: var(--label-radius);
 }
 
-div.project a.link {
-	display: block;
+div.btn {
 	margin: 1rem;
 	padding: 1rem;
 
-	color: var(--accent);
-	border: solid 1pt transparent;
-	border-radius: var(--button-radius);
+	border-radius: var(--btn-radius);
 	box-shadow: var(--shadow);
 
 	font-size: 0.75rem;
@@ -173,12 +190,7 @@ div.project a.link {
 	letter-spacing: 0.25pt;
 }
 
-div.project a.link:hover,
-div.project a.link:focus {
-	border-color: var(--accent);
-}
-
-div.project a.link:active {
+a.project:active div.btn {
 	background-color: var(--accent);
 	color: var(--white);
 	box-shadow: none;
@@ -231,7 +243,7 @@ p.text a.link {
 
 p.text a.link:hover,
 p.text a.link:focus {
-	text-decoration: underline;
+	text-decoration-color: inherit;
 }
 
 p.text a.link:active {
@@ -241,11 +253,11 @@ p.text a.link:active {
 a.link {
 	color: inherit;
 
-	text-decoration: none;
+	text-decoration-color: transparent;
 }
 
 mark.highlight {
-	background: none;
+	background: var(--accent-highlight);
 	color: var(--accent);
 }
 
@@ -264,9 +276,4 @@ img.img {
 img.badge {
 	height: 3rem;
 	margin: 1rem;
-}
-
-div.project img.img {
-	width: 100%;
-	padding: 1rem;
 }

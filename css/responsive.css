@@ -34,6 +34,17 @@
 		opacity: 1;
 	}
 
+	header.header a.link:hover,
+	header.header a.link:focus {
+		color: var(--black);
+		border-color: var(--black);
+	}
+
+	header.header a.link:focus {
+		background-color: var(--black);
+		color: var(--white);
+	}
+
 	span.material-symbols-rounded {
 		padding: 0.75rem;
 	}
@@ -59,8 +70,12 @@
 		padding: 3rem;
 	}
 
-	div.project + div.project {
+	a.project + a.project {
 		margin-top: 2rem;
+	}
+
+	h1.heading {
+		font-size: 1.25rem;
 	}
 
 	h2.subheading {
@@ -110,7 +125,7 @@
 		background-color: var(--dark-accent);
 	}
 
-	body.dark div.project {
+	body.dark a.project {
 		box-shadow: var(--responsive-shadow);
 	}
 
