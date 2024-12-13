@@ -1,15 +1,15 @@
 * {
-	--darkgray: rgb(31, 31, 31);
-	--dark-accent: rgba(255, 255, 255, 0.0625);
-
-	--dark-shadow: 0 0 4rem rgba(0, 0, 0, 0.5);
+	--black: black;
+	--white-tint: rgba(255, 255, 255, 0.125);
 }
 
+/* HEADER, MAIN, FOOTER CONTAINER */
 body.dark {
-	background-color: var(--darkgray);
+	background-color: var(--black);
 	color: var(--white);
 }
 
+/* HEADER LINK STATES */
 body.dark header.header a.link:hover,
 body.dark header.header a.link:focus {
 	color: var(--white);
@@ -21,12 +21,15 @@ body.dark header.header a.link:active {
 	color: var(--black);
 }
 
+/* FOOTER */
 body.dark footer.footer {
-	background-color: var(--dark-accent);
+	background-color: var(--white-tint);
 }
 
+/* FOOTER LINK STATES */
 body.dark footer.footer a.link:hover,
 body.dark footer.footer a.link:focus {
+	color: var(--white);
 	border-color: var(--white);
 }
 
@@ -35,42 +38,25 @@ body.dark footer.footer a.link:active {
 	color: var(--black);
 }
 
-body.dark a.project {
-	background-color: var(--darkgray);
-	box-shadow: var(--dark-shadow);
-}
-
-body.dark a.project:hover,
-body.dark a.project:focus {
+/* SELECTOR LINK STATES */
+body.dark section.section nav.nav a.link:hover,
+body.dark section.section nav.nav a.link:focus {
 	color: var(--white);
 	border-color: var(--white);
 }
 
-body.dark a.project:active {
-	background-color: var(--dark-accent);
-}
-
-body.dark div.label {
-	background-color: var(--dark-accent);
-	color: var(--white);
-}
-
-body.dark div.btn {
-	background-color: var(--dark-accent);
-	box-shadow: none;
-}
-
-body.dark a.project:active div.btn {
+body.dark section.section nav.nav a.link:active {
 	background-color: var(--white);
 	color: var(--black);
 }
 
-body.dark h4.subtitle {
-	background-color: var(--dark-accent);
+/* SELECTED LINK */
+body.dark a.link.selected {
+	background-color: var(--white-tint);
 	color: var(--white);
 }
 
-body.dark section.landing p.text,
-body.dark section#About p.text {
-	font-weight: var(--light);
+body.dark h5 {
+	background-color: var(--white-tint);
+	color: var(--white);
 }
