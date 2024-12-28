@@ -333,3 +333,57 @@ div.prompt {
 	text-align: right;
 	letter-spacing: var(--kerning);
 }
+
+/*------------------------------------------------------------------------------------------------*/
+
+h5.h5 {
+	margin: 1rem;
+
+	font-size: 1rem;
+	font-weight: var(--normal);
+	font-style: italic;
+}
+
+span.subtitle {
+	font-weight: var(--medium);
+}
+
+p.text + h3.title,
+figure.fig + h3.title,
+p.text + h4.subtitle,
+figure.fig + h4.subtitle,
+figure.fig + p.text,
+h2.subheading + figure.fig,
+p.text + figure.fig {
+	margin-top: 2rem;
+}
+
+ul {
+	margin: 1rem 1rem 1rem 2rem;
+}
+
+li {
+	margin-bottom: 1rem;
+}
+
+video {
+	display: block;
+	width: 100%;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+p.text + div.col-1of3,
+p.text + div.col-2of3,
+div.col-1of3 + h3.title,
+div.col-2of3 + h3.title,
+div.col-1of3 + h4.subtitle,
+div.col-2of3 + h4.subtitle,
+div.col-1of3 + p.text,
+div.col-2of3 + p.text {
+	margin-top: 2rem;
+}
+
+h2.subheading + div.half-container {
+	margin-top: -1rem;
+}
