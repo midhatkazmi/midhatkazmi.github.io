@@ -1,130 +1,102 @@
 @media screen and (max-width: 57.875rem) {
-	/* STYLE.CSS */
+	div.flex-container {
+		justify-content: center;
+	}
+	
+	div.center-container {
+		display: block;
+	}
 
-	/* HEADER */
+	div.half-item {
+		width: 100%;
+	}
+
+	/*------------------------------------------------------------------------------------------------*/
+
+	body.body {
+		padding: 0;
+	}
+	
+	/*------------------------------------------------------------------------------------------------*/
+	
 	header.header {
-		position: initial;
-		padding: 0 2rem 2rem 2rem;
+		position: fixed;
+		top: auto;
+		bottom: 0;
+		width: 100%;
 
-		text-align: center;
+		border-radius: 0;
 	}
 
-	/* HEADER LINK */
-	header.header a.link {
-		background-color: var(--accent-tint);
-		border-radius: var(--card-radius);
-		opacity: 1;
+	header.header a.link:not(div.buttons a.link) {
+		padding-right: 0;
 	}
 
-	/* HEADER ICON */
-	span.material-symbols-rounded {
-		padding: 0.75rem;
-	}
-
-	/* FOOTER */
+	/*------------------------------------------------------------------------------------------------*/
+	
 	footer.footer {
-		margin: 2rem 2rem 1rem 2rem;
-
-		scroll-margin: 2rem;
+		margin: 2rem 2rem calc(2rem + var(--header-height)) 2rem;
+		padding: 1rem;
 	}
 
-	/* FOOTER LINK */
 	footer.footer a.link {
 		margin: 1rem;
 		padding: 1rem;
 
 		background-color: var(--accent-tint);
 	}
+	
+	/*------------------------------------------------------------------------------------------------*/
 
-	/* 1ST SECTION */
-	section.section.initial {
-		padding: 3rem;
-	}
-
-	/* SECTION */
 	section.section {
 		padding: 1rem;
 	}
 
-	/* SUBSEQUENT SECTIONS */
-	section.section + section.section {
-		padding-top: 1rem;
-
-		scroll-margin: initial;
+	section.intro {
+		padding: 3rem 3rem 2rem 3rem;
 	}
 
-	/* PROJECT LINK CONTAINER */
-	div.projects {
-		text-align: initial;
-	}
+	/*------------------------------------------------------------------------------------------------*/
 
-	/* PROJECT LINK TEXT BACKGROUND */
-	figure.fig {
-		background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%);
-		opacity: 1;
-	}
-
-	/* PROJECT LINK TEXT CONTAINER */
-	div.projects figcaption.caption {
-		bottom: 0;
-		transform: initial;
-	}
-
-	/* HEADINGS */
 	h1.heading,
 	h2.subheading {
 		font-size: 1.5rem;
 	}
 
-	/* FLEX.CSS */
+	/*------------------------------------------------------------------------------------------------*/
 
-	/* HEADER & MAIN + FOOTER CONTAINER*/
-	div.switch-container {
-		display: flex;
-		flex-direction: column-reverse;
+	div.caption {
+		padding: 0;
 	}
 
-	div.header-container {
-		flex-direction: initial;
+	h3.title {
+		font-size: 1rem;
 	}
 
-	/* HEADER LINKS */
-	div.header-item {
-		width: calc(50% - 0.5rem);
+	h4.subtitle {
+		font-size: 0.75rem;
 	}
 
-	/* HEADER TEXT LINKS */
-	div.header-item:nth-child(2) {
-		display: none;
+	div.prompt {
+		margin-top: 0;
+		padding-top: 1rem;
+
+		border-top: solid 0.0625rem var(--accent-tint);
+		
+		text-align: center;
 	}
 
-	/* FOOTER LINKS */
-	footer.footer div.flex-container {
-		display: initial;
+	/*------------------------------------------------------------------------------------------------*/
+
+	body.dark header.header {
+		border: none;
+		border-top: solid 0.0625rem var(--white-tint);
 	}
 
-	/* PROJECT LINKS */
-	div.projects div.flex-container {
-		flex-wrap: wrap;
+	body.dark div.prompt {
+		border-color: var(--white-tint);
 	}
 
-	/* BADGES, PROJECT INFO */
-	div.half-container {
-		display: initial;
-	}
-
-	div.half-item {
-		width: initial;
-	}
-
-	/* DARK.CSS */
-
-	/* HEADER LINK */
-	body.dark header.header a.link {
-		background-color: var(--white-tint);
-	}
-
-	/* FOOTER LINK */
 	body.dark footer.footer a.link {
 		background-color: var(--white-tint);
 	}

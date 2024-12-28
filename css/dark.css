@@ -1,32 +1,38 @@
 * {
-	--black: black;
 	--white-tint: rgba(255, 255, 255, 0.125);
 }
 
-/* HEADER, MAIN, FOOTER CONTAINER */
+/*------------------------------------------------------------------------------------------------*/
+
 body.dark {
 	background-color: var(--black);
 	color: var(--white);
 }
 
-/* HEADER LINK STATES */
+/*------------------------------------------------------------------------------------------------*/
+
+body.dark header.header {
+	background-color: var(--black);
+	border: solid 0.0625rem var(--white-tint);
+	border-top: none;
+}
+
 body.dark header.header a.link:hover,
 body.dark header.header a.link:focus {
+	background-color: var(--white-tint);
 	color: var(--white);
-	border-color: var(--white);
 }
 
 body.dark header.header a.link:active {
-	background-color: var(--white);
-	color: var(--black);
+	background-color: var(--accent);
 }
 
-/* FOOTER */
+/*------------------------------------------------------------------------------------------------*/
+
 body.dark footer.footer {
 	background-color: var(--white-tint);
 }
 
-/* FOOTER LINK STATES */
 body.dark footer.footer a.link:hover,
 body.dark footer.footer a.link:focus {
 	color: var(--white);
@@ -34,29 +40,42 @@ body.dark footer.footer a.link:focus {
 }
 
 body.dark footer.footer a.link:active {
-	background-color: var(--white);
 	color: var(--black);
+	background-color: var(--white);
 }
 
-/* SELECTOR LINK STATES */
-body.dark section.section nav.nav a.link:hover,
-body.dark section.section nav.nav a.link:focus {
+/*------------------------------------------------------------------------------------------------*/
+
+body.dark nav.nav a.link:hover:not(a.selected),
+body.dark nav.nav a.link:focus:not(a.selected) {
 	color: var(--white);
 	border-color: var(--white);
 }
 
-body.dark section.section nav.nav a.link:active {
+body.dark nav.nav a.link:active:not(a.selected) {
+	color: var(--black);
+	background-color: var(--white);
+}
+
+body.dark a.selected {
+	background-color: var(--white-tint);
+	color: var(--white);
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+body.dark div.projects a.link {
+	background-color: var(--white-tint);
+	border-color: var(--black);
+}
+
+body.dark div.projects a.link:hover,
+body.dark div.projects a.link:focus {
+	color: var(--white);
+	border-color: var(--white);
+}
+
+body.dark div.projects a.link:active {
 	background-color: var(--white);
 	color: var(--black);
-}
-
-/* SELECTED LINK */
-body.dark a.link.selected {
-	background-color: var(--white-tint);
-	color: var(--white);
-}
-
-body.dark h5 {
-	background-color: var(--white-tint);
-	color: var(--white);
 }
