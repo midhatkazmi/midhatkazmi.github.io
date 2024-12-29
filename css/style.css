@@ -62,7 +62,8 @@ header.header {
 	box-shadow: var(--shadow);
 	overflow: hidden;
 
-	font-size: 0.75rem;
+/*	font-size: 0.75rem;*/
+	font-size: 0.875rem;
 	font-weight: var(--medium);
 	text-align: center;
 }
@@ -386,4 +387,54 @@ div.col-2of3 + p.text {
 
 h2.subheading + div.half-container {
 	margin-top: -1rem;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+figcaption.caption a.link {
+	text-decoration: underline;
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
+h6.h6 {
+	display: inline-block;
+	margin: 1rem;
+	padding: 0.5rem;
+
+	background-color: var(--accent-tint);
+	color: var(--accent);
+	border-radius: var(--button-radius);
+
+	font-size: 0.75rem;
+	font-weight: var(--medium);
+	text-transform: uppercase;
+	letter-spacing: var(--kerning);
+}
+
+div.tools {}
+
+div.fig {}
+
+div.fig img.img {
+	width: 3rem;
+	height: 3rem;
+	margin: auto;
+}
+
+div.tool {
+	margin: 1rem;
+
+	font-size: 0.75rem;
+	text-align: center;
+}
+
+div.sixth-container {
+	display: flex;
+	margin: 1rem;
+	flex-wrap: wrap;
+}
+
+div.sixth-item {
+	width: 20%;
 }

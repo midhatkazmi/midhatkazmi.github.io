@@ -108,4 +108,10 @@
 	body.dark footer.footer a.link {
 		background-color: var(--white-tint);
 	}
+
+	/*------------------------------------------------------------------------------------------------*/
+
+	div.sixth-item {
+		width: calc(100% / 3);
+	}
 }

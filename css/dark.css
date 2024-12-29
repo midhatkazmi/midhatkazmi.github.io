@@ -79,3 +79,10 @@ body.dark div.projects a.link:active {
 	background-color: var(--white);
 	color: var(--black);
 }
+
+/*------------------------------------------------------------------------------------------------*/
+
+body.dark h6.h6 {
+	background-color: var(--white-tint);
+	color: var(--white);
+}
