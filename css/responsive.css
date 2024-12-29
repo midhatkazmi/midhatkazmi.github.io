@@ -114,4 +114,13 @@
 	div.sixth-item {
 		width: calc(100% / 3);
 	}
+
+	/*------------------------------------------------------------------------------------------------*/
+
+	header.header a.link:hover,
+	header.header a.link:focus,
+	header.header a.link:active {
+		background: none !important;
+		color: var(--gray);
+	}
 }
