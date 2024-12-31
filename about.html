@@ -33,57 +33,51 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 		<title>
-			Midhat Kazmi | Visual Designer &amp; Developer
+			Midhat Kazmi | UX Designer + Developer
 		</title>
 	</head>
 
-	<body id="Body" class="body">
-	<!-- <body id="Body" class="body dark"> -->
+	<body id="Body">
+	<!-- <body id="Body" class="dark"> -->
 		<header class="header">
-			<div class="between-container">
-				<div class="between-item">
-					<div class="flex-container">
-						<div class="flex-item">
-							<!-- <a class="link" href="index.html#Projects"> -->
-							<a class="link" href="index.html">
-								<!-- Projects -->
-								Home
-							</a>
-						</div>
-
-						<div class="flex-item">
-							<a class="link" href="about.html">
-								About
-							</a>
-						</div>
-						
-						<div class="flex-item">
-							<a class="link" href="#Contact">
-								Contact
-							</a>
-						</div>
-						
-						<div class="flex-item">
-							<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">
-								Resume
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="between-item">
-					<div class="buttons">
+			<div class="header-width">
+				<div class="between-container">
+					<div class="between-item">
 						<div class="flex-container">
 							<div class="flex-item">
-								<a class="link" href="javascript:void(0)" onclick="toggleTheme()">
-									&#9728;
+								<a class="link" href="index.html">
+									Home
 								</a>
 							</div>
-
+							
 							<div class="flex-item">
-								<a class="link" href="#">
-									&uarr;
+								<a class="link" href="#Contact">
+									Contact
 								</a>
+							</div>
+							
+							<div class="flex-item">
+								<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">
+									Resume
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="between-item">
+						<div class="buttons">
+							<div class="flex-container">
+								<div class="flex-item">
+									<a class="link" href="javascript:void(0)" onclick="toggleTheme()">
+										&#9680;
+									</a>
+								</div>
+
+								<div class="flex-item">
+									<a class="link" href="#">
+										&uarr;
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -91,14 +85,14 @@
 			</div>
 		</header>
 
-		<main>
+		<main class="main">
 			<section class="section">
 				<h1 class="heading">
 					About Me
 				</h1>
 
 				<p class="text">
-					My name is Midhat Kazmi. I am a highly motivated and hardworking individual with over 3 years of professional experience in front-end web design and development, user experience and interface (UX/UI) design, and graphic design.
+					My name is Midhat Kazmi. I am a highly motivated and hardworking individual with over 3 years of combined experience in front-end web design and development, user experience and interface (UX/UI) design, and graphic design.
 				</p>
 
 				<p class="text">
@@ -106,13 +100,15 @@
 				</p>
 
 				<div class="col-1of3">
-					<figure class="fig">
-						<img class="img" src="img/me.jpg">
+					<div class="media">
+						<figure class="figure">
+							<img class="image" src="img/me.jpg">
 
-						<figcaption class="caption">
-							My name is pronounced /mid-hat/. As phonetic as it gets! &#128513;
-						</figcaption>
-					</figure>
+							<figcaption class="caption">
+								My name is pronounced /mid-hat/. As phonetic as it gets! &#128513;
+							</figcaption>
+						</figure>
+					</div>
 				</div>
 
 				<p class="text">
@@ -123,9 +119,9 @@
 					User experience and satisfaction is why I am passionate about applying my design skills to all aspects that can be branded. I have experience doing so in institutional organizations and startups. These experiences range in tone from formal to casual, in both collaborative and independent environments. I have produced graphic design materials, user interfaces and their experiences, and delved into web development and eLearning.
 				</p>
 
-				<h3 class="title">
+				<h2 class="subheading">
 					Background
-				</h3>
+				</h2>
 
 				<p class="text">
 					I graduated with a Bachelor of Arts degree in the <a class="link" href="https://www.sfu.ca/siat.html" target="_blank">School of Interactive Arts and Technology</a>, specializing in Design, from <a class="link" href="https://www.sfu.ca/" target="_blank">Simon Fraser University</a> in Burnaby, British Columbia.
@@ -136,13 +132,15 @@
 				</p>
 
 				<div class="col-2of3">
-					<figure class="fig">
-						<img class="img" src="img/comparison.jpg">
+					<div class="media">
+						<figure class="figure">
+							<img class="image" src="img/comparison.jpg">
 
-						<figcaption class="caption">
-							On the left, my first logo ever. *shudders* On the right, a more recent logo (view project <a class="link" href="baabulilm.html">here</a>).
-						</figcaption>
-					</figure>
+							<figcaption class="caption">
+								On the left, my first logo ever. *shudders* On the right, a more recent logo (view project <a class="link" href="baabulilm.html">here</a>).
+							</figcaption>
+						</figure>
+					</div>
 				</div>
 
 				<p class="text">
@@ -151,35 +149,37 @@
 			</section>
 		</main>
 
-		<footer id="Contact" class="footer">
-			<h2 class="subheading">
-				Thanks for visiting! &#127881; Let's <mark class="highlight">connect</mark>.
-			</h2>
+		<div class="footer-width">
+			<footer id="Contact" class="footer">
+				<h2 class="subheading">
+					Thanks for visiting! &#127881; Let's <mark class="highlight">connect</mark>.
+				</h2>
 
-			<div class="center-container">
-				<div class="center-item">
-					<a class="link" href="mailto:midhatkazmi.01@gmail.com">
-						Email
-					</a>
+				<div class="center-container">
+					<div class="center-item">
+						<a class="link" href="mailto:midhatkazmi.01@gmail.com">
+							Email
+						</a>
+					</div>
+
+					<div class="center-item">
+						<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">
+							Resume
+						</a>
+					</div>
+
+					<div class="center-item">
+						<a class="link" href="https://www.linkedin.com/in/midhatkazmi/" target="_blank">
+							LinkedIn
+						</a>
+					</div>
 				</div>
 
-				<div class="center-item">
-					<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">
-						Resume
-					</a>
-				</div>
-
-				<div class="center-item">
-					<a class="link" href="https://www.linkedin.com/in/midhatkazmi/" target="_blank">
-						LinkedIn
-					</a>
-				</div>
-			</div>
-
-			<p class="text">
-				&copy; Midhat Kazmi, updated December &#9731; 2024&mdash;designed &amp; coded with the help of chai. &#9749;
-			</p>
-		</footer>
+				<p class="text">
+					&copy; Midhat Kazmi, updated December &#9731; 2024&mdash;designed &amp; coded with the help of chai. &#9749;
+				</p>
+			</footer>
+		</div>
 
 		<script src="js/script.js"></script>
 	</body>

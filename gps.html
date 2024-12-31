@@ -33,57 +33,51 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 		<title>
-			Midhat Kazmi | Visual Designer &amp; Developer
+			Midhat Kazmi | UX Designer + Developer
 		</title>
 	</head>
 
-	<body id="Body" class="body">
-	<!-- <body id="Body" class="body dark"> -->
+	<body id="Body">
+	<!-- <body id="Body" class="dark"> -->
 		<header class="header">
-			<div class="between-container">
-				<div class="between-item">
-					<div class="flex-container">
-						<div class="flex-item">
-							<!-- <a class="link" href="index.html#Projects"> -->
-							<a class="link" href="index.html">
-								<!-- Projects -->
-								Home
-							</a>
-						</div>
-
-						<div class="flex-item">
-							<a class="link" href="about.html">
-								About
-							</a>
-						</div>
-						
-						<div class="flex-item">
-							<a class="link" href="#Contact">
-								Contact
-							</a>
-						</div>
-						
-						<div class="flex-item">
-							<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">
-								Resume
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="between-item">
-					<div class="buttons">
+			<div class="header-width">
+				<div class="between-container">
+					<div class="between-item">
 						<div class="flex-container">
 							<div class="flex-item">
-								<a class="link" href="javascript:void(0)" onclick="toggleTheme()">
-									&#9728;
+								<a class="link" href="index.html">
+									Home
 								</a>
 							</div>
-
+							
 							<div class="flex-item">
-								<a class="link" href="#">
-									&uarr;
+								<a class="link" href="#Contact">
+									Contact
 								</a>
+							</div>
+							
+							<div class="flex-item">
+								<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">
+									Resume
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="between-item">
+						<div class="buttons">
+							<div class="flex-container">
+								<div class="flex-item">
+									<a class="link" href="javascript:void(0)" onclick="toggleTheme()">
+										&#9680;
+									</a>
+								</div>
+
+								<div class="flex-item">
+									<a class="link" href="#">
+										&uarr;
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -91,7 +85,7 @@
 			</div>
 		</header>
 
-		<main>
+		<main class="main">
 			<section class="section">
 				<h1 class="heading">
 					SFU GPS Rebrand
@@ -136,9 +130,11 @@
 			</section>
 
 			<section class="section">
-				<figure class="fig">
-					<img class="img" src="img/gps/preview.png">
-				</figure>
+				<div class="media">
+					<figure class="figure">
+						<img class="image" src="img/gps/preview.png">
+					</figure>
+				</div>
 			</section>
 
 			<section class="section">
@@ -180,9 +176,11 @@
 					Over the course of my co-op, I had a few graphic design projects that required consistent elements that were either for me to follow or given to me, or developed as a part of the rebranding.
 				</p>
 
-				<figure class="fig">
-					<img class="img" src="img/gps/materials.png">
-				</figure>
+				<div class="media">
+					<figure class="figure">
+						<img class="image" src="img/gps/materials.png">
+					</figure>
+				</div>
 				
 				<h3 class="title">
 					SFU Branding
@@ -242,35 +240,37 @@
 			</section>
 		</main>
 
-		<footer id="Contact" class="footer">
-			<h2 class="subheading">
-				Thanks for visiting! &#127881; Let's <mark class="highlight">connect</mark>.
-			</h2>
+		<div class="footer-width">
+			<footer id="Contact" class="footer">
+				<h2 class="subheading">
+					Thanks for visiting! &#127881; Let's <mark class="highlight">connect</mark>.
+				</h2>
 
-			<div class="center-container">
-				<div class="center-item">
-					<a class="link" href="mailto:midhatkazmi.01@gmail.com">
-						Email
-					</a>
+				<div class="center-container">
+					<div class="center-item">
+						<a class="link" href="mailto:midhatkazmi.01@gmail.com">
+							Email
+						</a>
+					</div>
+
+					<div class="center-item">
+						<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">
+							Resume
+						</a>
+					</div>
+
+					<div class="center-item">
+						<a class="link" href="https://www.linkedin.com/in/midhatkazmi/" target="_blank">
+							LinkedIn
+						</a>
+					</div>
 				</div>
 
-				<div class="center-item">
-					<a class="link" href="files/Resume_Midhat_Kazmi.pdf" target="_blank">
-						Resume
-					</a>
-				</div>
-
-				<div class="center-item">
-					<a class="link" href="https://www.linkedin.com/in/midhatkazmi/" target="_blank">
-						LinkedIn
-					</a>
-				</div>
-			</div>
-
-			<p class="text">
-				&copy; Midhat Kazmi, updated December &#9731; 2024&mdash;designed &amp; coded with the help of chai. &#9749;
-			</p>
-		</footer>
+				<p class="text">
+					&copy; Midhat Kazmi, updated December &#9731; 2024&mdash;designed &amp; coded with the help of chai. &#9749;
+				</p>
+			</footer>
+		</div>
 
 		<script src="js/script.js"></script>
 	</body>
