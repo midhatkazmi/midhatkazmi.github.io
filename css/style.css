@@ -263,21 +263,35 @@ video.video {
 
 /*------------------------------------------------------------------------------------------------*/
 
-div.icons {
+div.tools {
+	height: 100%;
+
 	font-size: 0.75rem;
 	text-align: center;
 }
 
-div.icons figure.figure {
+div.design {
+	padding-right: 1rem;
+
+	border-right: solid 0.0315rem var(--lightgray);
+}
+
+div.development {
+	padding-left: 1rem;
+
+	border-left: solid 0.0315rem var(--lightgray);
+}
+
+div.tools figure.figure {
 	padding: 1rem;
 }
 
-div.icons img.image {
+div.tools img.image {
 	margin: auto;
 	width: 3rem;
 }
 
-div.icons figcaption.caption {
+div.tools figcaption.caption {
 	margin-top: 1rem;
 }
 

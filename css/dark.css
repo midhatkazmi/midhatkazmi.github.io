@@ -45,6 +45,13 @@ body.dark h6.h6 {
 
 /*------------------------------------------------------------------------------------------------*/
 
+body.dark div.design,
+body.dark div.development {
+	border-color: var(--white-tint);
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
 body.dark div.projects a.link {
 	background-color: var(--white-tint);
 }
