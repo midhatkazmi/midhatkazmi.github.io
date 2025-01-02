@@ -30,6 +30,16 @@ div.half-item {
 	width: 50%;
 }
 
+div.icon-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+div.icon-item {
+	width: 20%;
+}
+
 /*------------------------------------------------------------------------------------------------*/
 
 div.col-1of3 {

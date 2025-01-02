@@ -190,6 +190,21 @@ h5.h5 {
 	font-style: italic;
 }
 
+h6.h6 {
+	display: inline-block;
+	margin: 1rem;
+	padding: 0.5rem;
+
+	background-color: var(--accent-tint);
+	color: var(--accent);
+	border-radius: var(--button-radius);
+
+	font-size: 0.75rem;
+	font-weight: var(--medium);
+	text-transform: uppercase;
+	letter-spacing: var(--kerning);
+}
+
 /*------------------------------------------------------------------------------------------------*/
 
 p.text {
@@ -248,21 +263,21 @@ video.video {
 
 /*------------------------------------------------------------------------------------------------*/
 
-div.tools {
+div.icons {
 	font-size: 0.75rem;
 	text-align: center;
 }
 
-div.tools figure.figure {
-	margin: 1rem;
+div.icons figure.figure {
+	padding: 1rem;
 }
 
-div.tools img.image {
-	width: 3rem;
+div.icons img.image {
 	margin: auto;
+	width: 3rem;
 }
 
-div.tools figcaption.caption {
+div.icons figcaption.caption {
 	margin-top: 1rem;
 }
 

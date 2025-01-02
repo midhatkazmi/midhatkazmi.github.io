@@ -38,6 +38,13 @@ body.dark footer.footer a.link:active {
 
 /*------------------------------------------------------------------------------------------------*/
 
+body.dark h6.h6 {
+	background-color: var(--white-tint);
+	color: var(--white);
+}
+
+/*------------------------------------------------------------------------------------------------*/
+
 body.dark div.projects a.link {
 	background-color: var(--white-tint);
 }
